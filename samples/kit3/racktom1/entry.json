@@ -1,0 +1,376 @@
+{
+ "piece": "Tom1",
+ "art": "Hit",
+ "note": 47,
+ "gm": [
+  48,
+  50
+ ],
+ "gain_db": 3.98,
+ "layers": [
+  {
+   "vel": 4,
+   "rr": 1,
+   "file": "racktom1/racktom1_v004_rr1.ogg",
+   "seconds": 1.782,
+   "peak_db": -3.8
+  },
+  {
+   "vel": 4,
+   "rr": 2,
+   "file": "racktom1/racktom1_v004_rr2.ogg",
+   "seconds": 1.776,
+   "peak_db": -3.7
+  },
+  {
+   "vel": 4,
+   "rr": 3,
+   "file": "racktom1/racktom1_v004_rr3.ogg",
+   "seconds": 2.6,
+   "peak_db": -3.8
+  },
+  {
+   "vel": 4,
+   "rr": 4,
+   "file": "racktom1/racktom1_v004_rr4.ogg",
+   "seconds": 1.776,
+   "peak_db": -3.7
+  },
+  {
+   "vel": 14,
+   "rr": 1,
+   "file": "racktom1/racktom1_v014_rr1.ogg",
+   "seconds": 2.022,
+   "peak_db": -3.6
+  },
+  {
+   "vel": 14,
+   "rr": 2,
+   "file": "racktom1/racktom1_v014_rr2.ogg",
+   "seconds": 1.948,
+   "peak_db": -3.5
+  },
+  {
+   "vel": 14,
+   "rr": 3,
+   "file": "racktom1/racktom1_v014_rr3.ogg",
+   "seconds": 1.83,
+   "peak_db": -3.9
+  },
+  {
+   "vel": 14,
+   "rr": 4,
+   "file": "racktom1/racktom1_v014_rr4.ogg",
+   "seconds": 1.782,
+   "peak_db": -3.8
+  },
+  {
+   "vel": 24,
+   "rr": 1,
+   "file": "racktom1/racktom1_v024_rr1.ogg",
+   "seconds": 1.787,
+   "peak_db": -3.7
+  },
+  {
+   "vel": 24,
+   "rr": 2,
+   "file": "racktom1/racktom1_v024_rr2.ogg",
+   "seconds": 2.6,
+   "peak_db": -3.8
+  },
+  {
+   "vel": 24,
+   "rr": 3,
+   "file": "racktom1/racktom1_v024_rr3.ogg",
+   "seconds": 1.783,
+   "peak_db": -3.9
+  },
+  {
+   "vel": 24,
+   "rr": 4,
+   "file": "racktom1/racktom1_v024_rr4.ogg",
+   "seconds": 2.022,
+   "peak_db": -3.6
+  },
+  {
+   "vel": 35,
+   "rr": 1,
+   "file": "racktom1/racktom1_v035_rr1.ogg",
+   "seconds": 1.776,
+   "peak_db": -3.7
+  },
+  {
+   "vel": 35,
+   "rr": 2,
+   "file": "racktom1/racktom1_v035_rr2.ogg",
+   "seconds": 1.783,
+   "peak_db": -3.9
+  },
+  {
+   "vel": 35,
+   "rr": 3,
+   "file": "racktom1/racktom1_v035_rr3.ogg",
+   "seconds": 1.787,
+   "peak_db": -3.7
+  },
+  {
+   "vel": 35,
+   "rr": 4,
+   "file": "racktom1/racktom1_v035_rr4.ogg",
+   "seconds": 2.6,
+   "peak_db": -3.8
+  },
+  {
+   "vel": 46,
+   "rr": 1,
+   "file": "racktom1/racktom1_v046_rr1.ogg",
+   "seconds": 1.758,
+   "peak_db": -4.2
+  },
+  {
+   "vel": 46,
+   "rr": 2,
+   "file": "racktom1/racktom1_v046_rr2.ogg",
+   "seconds": 1.707,
+   "peak_db": -3.9
+  },
+  {
+   "vel": 46,
+   "rr": 3,
+   "file": "racktom1/racktom1_v046_rr3.ogg",
+   "seconds": 1.749,
+   "peak_db": -3.1
+  },
+  {
+   "vel": 46,
+   "rr": 4,
+   "file": "racktom1/racktom1_v046_rr4.ogg",
+   "seconds": 1.815,
+   "peak_db": -4.3
+  },
+  {
+   "vel": 57,
+   "rr": 1,
+   "file": "racktom1/racktom1_v057_rr1.ogg",
+   "seconds": 1.703,
+   "peak_db": -2.2
+  },
+  {
+   "vel": 57,
+   "rr": 2,
+   "file": "racktom1/racktom1_v057_rr2.ogg",
+   "seconds": 1.707,
+   "peak_db": -3.9
+  },
+  {
+   "vel": 57,
+   "rr": 3,
+   "file": "racktom1/racktom1_v057_rr3.ogg",
+   "seconds": 1.758,
+   "peak_db": -4.2
+  },
+  {
+   "vel": 57,
+   "rr": 4,
+   "file": "racktom1/racktom1_v057_rr4.ogg",
+   "seconds": 1.751,
+   "peak_db": -3.6
+  },
+  {
+   "vel": 68,
+   "rr": 1,
+   "file": "racktom1/racktom1_v068_rr1.ogg",
+   "seconds": 1.758,
+   "peak_db": -3.5
+  },
+  {
+   "vel": 68,
+   "rr": 2,
+   "file": "racktom1/racktom1_v068_rr2.ogg",
+   "seconds": 1.749,
+   "peak_db": -3.1
+  },
+  {
+   "vel": 68,
+   "rr": 3,
+   "file": "racktom1/racktom1_v068_rr3.ogg",
+   "seconds": 1.701,
+   "peak_db": -4.0
+  },
+  {
+   "vel": 68,
+   "rr": 4,
+   "file": "racktom1/racktom1_v068_rr4.ogg",
+   "seconds": 1.815,
+   "peak_db": -4.3
+  },
+  {
+   "vel": 79,
+   "rr": 1,
+   "file": "racktom1/racktom1_v079_rr1.ogg",
+   "seconds": 1.888,
+   "peak_db": -2.5
+  },
+  {
+   "vel": 79,
+   "rr": 2,
+   "file": "racktom1/racktom1_v079_rr2.ogg",
+   "seconds": 1.841,
+   "peak_db": -2.9
+  },
+  {
+   "vel": 79,
+   "rr": 3,
+   "file": "racktom1/racktom1_v079_rr3.ogg",
+   "seconds": 1.931,
+   "peak_db": -1.9
+  },
+  {
+   "vel": 79,
+   "rr": 4,
+   "file": "racktom1/racktom1_v079_rr4.ogg",
+   "seconds": 1.787,
+   "peak_db": -1.9
+  },
+  {
+   "vel": 90,
+   "rr": 1,
+   "file": "racktom1/racktom1_v090_rr1.ogg",
+   "seconds": 1.786,
+   "peak_db": -2.3
+  },
+  {
+   "vel": 90,
+   "rr": 2,
+   "file": "racktom1/racktom1_v090_rr2.ogg",
+   "seconds": 1.787,
+   "peak_db": -2.4
+  },
+  {
+   "vel": 90,
+   "rr": 3,
+   "file": "racktom1/racktom1_v090_rr3.ogg",
+   "seconds": 1.876,
+   "peak_db": -2.7
+  },
+  {
+   "vel": 90,
+   "rr": 4,
+   "file": "racktom1/racktom1_v090_rr4.ogg",
+   "seconds": 1.888,
+   "peak_db": -2.5
+  },
+  {
+   "vel": 101,
+   "rr": 1,
+   "file": "racktom1/racktom1_v101_rr1.ogg",
+   "seconds": 1.685,
+   "peak_db": -1.9
+  },
+  {
+   "vel": 101,
+   "rr": 2,
+   "file": "racktom1/racktom1_v101_rr2.ogg",
+   "seconds": 1.69,
+   "peak_db": -0.8
+  },
+  {
+   "vel": 101,
+   "rr": 3,
+   "file": "racktom1/racktom1_v101_rr3.ogg",
+   "seconds": 1.696,
+   "peak_db": -2.3
+  },
+  {
+   "vel": 101,
+   "rr": 4,
+   "file": "racktom1/racktom1_v101_rr4.ogg",
+   "seconds": 1.74,
+   "peak_db": -2.2
+  },
+  {
+   "vel": 112,
+   "rr": 1,
+   "file": "racktom1/racktom1_v112_rr1.ogg",
+   "seconds": 1.732,
+   "peak_db": -2.3
+  },
+  {
+   "vel": 112,
+   "rr": 2,
+   "file": "racktom1/racktom1_v112_rr2.ogg",
+   "seconds": 1.644,
+   "peak_db": -2.1
+  },
+  {
+   "vel": 112,
+   "rr": 3,
+   "file": "racktom1/racktom1_v112_rr3.ogg",
+   "seconds": 1.644,
+   "peak_db": -2.4
+  },
+  {
+   "vel": 112,
+   "rr": 4,
+   "file": "racktom1/racktom1_v112_rr4.ogg",
+   "seconds": 1.696,
+   "peak_db": -2.3
+  },
+  {
+   "vel": 122,
+   "rr": 1,
+   "file": "racktom1/racktom1_v122_rr1.ogg",
+   "seconds": 1.567,
+   "peak_db": -0.6
+  },
+  {
+   "vel": 122,
+   "rr": 2,
+   "file": "racktom1/racktom1_v122_rr2.ogg",
+   "seconds": 1.766,
+   "peak_db": -0.7
+  },
+  {
+   "vel": 122,
+   "rr": 3,
+   "file": "racktom1/racktom1_v122_rr3.ogg",
+   "seconds": 1.679,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 122,
+   "rr": 4,
+   "file": "racktom1/racktom1_v122_rr4.ogg",
+   "seconds": 1.793,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 127,
+   "rr": 1,
+   "file": "racktom1/racktom1_v127_rr1.ogg",
+   "seconds": 1.568,
+   "peak_db": -0.7
+  },
+  {
+   "vel": 127,
+   "rr": 2,
+   "file": "racktom1/racktom1_v127_rr2.ogg",
+   "seconds": 1.671,
+   "peak_db": -0.8
+  },
+  {
+   "vel": 127,
+   "rr": 3,
+   "file": "racktom1/racktom1_v127_rr3.ogg",
+   "seconds": 1.769,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 127,
+   "rr": 4,
+   "file": "racktom1/racktom1_v127_rr4.ogg",
+   "seconds": 1.793,
+   "peak_db": -0.5
+  }
+ ]
+}

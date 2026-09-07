@@ -1,0 +1,179 @@
+{
+ "piece": "Ride",
+ "art": "Crash",
+ "note": 60,
+ "gm": [
+  59
+ ],
+ "gain_db": 13.62,
+ "layers": [
+  {
+   "vel": 6,
+   "rr": 1,
+   "file": "ride/ride_v006_rr1.ogg",
+   "seconds": 6.0,
+   "peak_db": -19.7
+  },
+  {
+   "vel": 6,
+   "rr": 2,
+   "file": "ride/ride_v006_rr2.ogg",
+   "seconds": 6.0,
+   "peak_db": -20.8
+  },
+  {
+   "vel": 6,
+   "rr": 3,
+   "file": "ride/ride_v006_rr3.ogg",
+   "seconds": 6.0,
+   "peak_db": -17.8
+  },
+  {
+   "vel": 24,
+   "rr": 1,
+   "file": "ride/ride_v024_rr1.ogg",
+   "seconds": 6.0,
+   "peak_db": -13.7
+  },
+  {
+   "vel": 24,
+   "rr": 2,
+   "file": "ride/ride_v024_rr2.ogg",
+   "seconds": 6.0,
+   "peak_db": -13.5
+  },
+  {
+   "vel": 24,
+   "rr": 3,
+   "file": "ride/ride_v024_rr3.ogg",
+   "seconds": 6.0,
+   "peak_db": -14.3
+  },
+  {
+   "vel": 44,
+   "rr": 1,
+   "file": "ride/ride_v044_rr1.ogg",
+   "seconds": 6.0,
+   "peak_db": -12.6
+  },
+  {
+   "vel": 44,
+   "rr": 2,
+   "file": "ride/ride_v044_rr2.ogg",
+   "seconds": 6.0,
+   "peak_db": -11.3
+  },
+  {
+   "vel": 44,
+   "rr": 3,
+   "file": "ride/ride_v044_rr3.ogg",
+   "seconds": 6.0,
+   "peak_db": -10.4
+  },
+  {
+   "vel": 64,
+   "rr": 1,
+   "file": "ride/ride_v064_rr1.ogg",
+   "seconds": 6.0,
+   "peak_db": -8.8
+  },
+  {
+   "vel": 64,
+   "rr": 2,
+   "file": "ride/ride_v064_rr2.ogg",
+   "seconds": 6.0,
+   "peak_db": -9.7
+  },
+  {
+   "vel": 64,
+   "rr": 3,
+   "file": "ride/ride_v064_rr3.ogg",
+   "seconds": 6.0,
+   "peak_db": -7.7
+  },
+  {
+   "vel": 84,
+   "rr": 1,
+   "file": "ride/ride_v084_rr1.ogg",
+   "seconds": 6.0,
+   "peak_db": -6.2
+  },
+  {
+   "vel": 84,
+   "rr": 2,
+   "file": "ride/ride_v084_rr2.ogg",
+   "seconds": 6.0,
+   "peak_db": -3.3
+  },
+  {
+   "vel": 84,
+   "rr": 3,
+   "file": "ride/ride_v084_rr3.ogg",
+   "seconds": 6.0,
+   "peak_db": -7.1
+  },
+  {
+   "vel": 104,
+   "rr": 1,
+   "file": "ride/ride_v104_rr1.ogg",
+   "seconds": 6.0,
+   "peak_db": -3.2
+  },
+  {
+   "vel": 104,
+   "rr": 2,
+   "file": "ride/ride_v104_rr2.ogg",
+   "seconds": 6.0,
+   "peak_db": -3.6
+  },
+  {
+   "vel": 104,
+   "rr": 3,
+   "file": "ride/ride_v104_rr3.ogg",
+   "seconds": 6.0,
+   "peak_db": -1.9
+  },
+  {
+   "vel": 118,
+   "rr": 1,
+   "file": "ride/ride_v118_rr1.ogg",
+   "seconds": 6.0,
+   "peak_db": -3.3
+  },
+  {
+   "vel": 118,
+   "rr": 2,
+   "file": "ride/ride_v118_rr2.ogg",
+   "seconds": 6.0,
+   "peak_db": -3.5
+  },
+  {
+   "vel": 118,
+   "rr": 3,
+   "file": "ride/ride_v118_rr3.ogg",
+   "seconds": 6.0,
+   "peak_db": -4.0
+  },
+  {
+   "vel": 127,
+   "rr": 1,
+   "file": "ride/ride_v127_rr1.ogg",
+   "seconds": 6.0,
+   "peak_db": -2.6
+  },
+  {
+   "vel": 127,
+   "rr": 2,
+   "file": "ride/ride_v127_rr2.ogg",
+   "seconds": 6.0,
+   "peak_db": -3.0
+  },
+  {
+   "vel": 127,
+   "rr": 3,
+   "file": "ride/ride_v127_rr3.ogg",
+   "seconds": 6.0,
+   "peak_db": -0.5
+  }
+ ]
+}

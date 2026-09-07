@@ -1,0 +1,376 @@
+{
+ "piece": "Snare",
+ "art": "Hit",
+ "note": 38,
+ "gm": [
+  38,
+  40
+ ],
+ "gain_db": -0.5,
+ "layers": [
+  {
+   "vel": 4,
+   "rr": 1,
+   "file": "snare/snare_v004_rr1.ogg",
+   "seconds": 1.271,
+   "peak_db": -8.3
+  },
+  {
+   "vel": 4,
+   "rr": 2,
+   "file": "snare/snare_v004_rr2.ogg",
+   "seconds": 1.254,
+   "peak_db": -8.0
+  },
+  {
+   "vel": 4,
+   "rr": 3,
+   "file": "snare/snare_v004_rr3.ogg",
+   "seconds": 1.294,
+   "peak_db": -8.4
+  },
+  {
+   "vel": 4,
+   "rr": 4,
+   "file": "snare/snare_v004_rr4.ogg",
+   "seconds": 1.282,
+   "peak_db": -7.6
+  },
+  {
+   "vel": 14,
+   "rr": 1,
+   "file": "snare/snare_v014_rr1.ogg",
+   "seconds": 1.317,
+   "peak_db": -6.5
+  },
+  {
+   "vel": 14,
+   "rr": 2,
+   "file": "snare/snare_v014_rr2.ogg",
+   "seconds": 1.267,
+   "peak_db": -8.8
+  },
+  {
+   "vel": 14,
+   "rr": 3,
+   "file": "snare/snare_v014_rr3.ogg",
+   "seconds": 1.271,
+   "peak_db": -8.3
+  },
+  {
+   "vel": 14,
+   "rr": 4,
+   "file": "snare/snare_v014_rr4.ogg",
+   "seconds": 1.271,
+   "peak_db": -7.9
+  },
+  {
+   "vel": 24,
+   "rr": 1,
+   "file": "snare/snare_v024_rr1.ogg",
+   "seconds": 1.418,
+   "peak_db": -2.4
+  },
+  {
+   "vel": 24,
+   "rr": 2,
+   "file": "snare/snare_v024_rr2.ogg",
+   "seconds": 1.383,
+   "peak_db": -1.8
+  },
+  {
+   "vel": 24,
+   "rr": 3,
+   "file": "snare/snare_v024_rr3.ogg",
+   "seconds": 1.42,
+   "peak_db": -2.6
+  },
+  {
+   "vel": 24,
+   "rr": 4,
+   "file": "snare/snare_v024_rr4.ogg",
+   "seconds": 1.418,
+   "peak_db": -2.4
+  },
+  {
+   "vel": 35,
+   "rr": 1,
+   "file": "snare/snare_v035_rr1.ogg",
+   "seconds": 1.411,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 35,
+   "rr": 2,
+   "file": "snare/snare_v035_rr2.ogg",
+   "seconds": 1.387,
+   "peak_db": -4.7
+  },
+  {
+   "vel": 35,
+   "rr": 3,
+   "file": "snare/snare_v035_rr3.ogg",
+   "seconds": 1.369,
+   "peak_db": -3.6
+  },
+  {
+   "vel": 35,
+   "rr": 4,
+   "file": "snare/snare_v035_rr4.ogg",
+   "seconds": 1.411,
+   "peak_db": -2.0
+  },
+  {
+   "vel": 46,
+   "rr": 1,
+   "file": "snare/snare_v046_rr1.ogg",
+   "seconds": 1.509,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 46,
+   "rr": 2,
+   "file": "snare/snare_v046_rr2.ogg",
+   "seconds": 1.494,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 46,
+   "rr": 3,
+   "file": "snare/snare_v046_rr3.ogg",
+   "seconds": 1.436,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 46,
+   "rr": 4,
+   "file": "snare/snare_v046_rr4.ogg",
+   "seconds": 1.484,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 57,
+   "rr": 1,
+   "file": "snare/snare_v057_rr1.ogg",
+   "seconds": 1.459,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 57,
+   "rr": 2,
+   "file": "snare/snare_v057_rr2.ogg",
+   "seconds": 1.481,
+   "peak_db": -1.8
+  },
+  {
+   "vel": 57,
+   "rr": 3,
+   "file": "snare/snare_v057_rr3.ogg",
+   "seconds": 1.473,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 57,
+   "rr": 4,
+   "file": "snare/snare_v057_rr4.ogg",
+   "seconds": 1.469,
+   "peak_db": -0.9
+  },
+  {
+   "vel": 68,
+   "rr": 1,
+   "file": "snare/snare_v068_rr1.ogg",
+   "seconds": 1.538,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 68,
+   "rr": 2,
+   "file": "snare/snare_v068_rr2.ogg",
+   "seconds": 1.559,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 68,
+   "rr": 3,
+   "file": "snare/snare_v068_rr3.ogg",
+   "seconds": 1.523,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 68,
+   "rr": 4,
+   "file": "snare/snare_v068_rr4.ogg",
+   "seconds": 1.541,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 79,
+   "rr": 1,
+   "file": "snare/snare_v079_rr1.ogg",
+   "seconds": 1.523,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 79,
+   "rr": 2,
+   "file": "snare/snare_v079_rr2.ogg",
+   "seconds": 1.538,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 79,
+   "rr": 3,
+   "file": "snare/snare_v079_rr3.ogg",
+   "seconds": 1.541,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 79,
+   "rr": 4,
+   "file": "snare/snare_v079_rr4.ogg",
+   "seconds": 1.52,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 90,
+   "rr": 1,
+   "file": "snare/snare_v090_rr1.ogg",
+   "seconds": 1.568,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 90,
+   "rr": 2,
+   "file": "snare/snare_v090_rr2.ogg",
+   "seconds": 1.571,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 90,
+   "rr": 3,
+   "file": "snare/snare_v090_rr3.ogg",
+   "seconds": 1.546,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 90,
+   "rr": 4,
+   "file": "snare/snare_v090_rr4.ogg",
+   "seconds": 1.588,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 101,
+   "rr": 1,
+   "file": "snare/snare_v101_rr1.ogg",
+   "seconds": 1.574,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 101,
+   "rr": 2,
+   "file": "snare/snare_v101_rr2.ogg",
+   "seconds": 1.565,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 101,
+   "rr": 3,
+   "file": "snare/snare_v101_rr3.ogg",
+   "seconds": 1.574,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 101,
+   "rr": 4,
+   "file": "snare/snare_v101_rr4.ogg",
+   "seconds": 1.571,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 112,
+   "rr": 1,
+   "file": "snare/snare_v112_rr1.ogg",
+   "seconds": 1.612,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 112,
+   "rr": 2,
+   "file": "snare/snare_v112_rr2.ogg",
+   "seconds": 1.632,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 112,
+   "rr": 3,
+   "file": "snare/snare_v112_rr3.ogg",
+   "seconds": 1.617,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 112,
+   "rr": 4,
+   "file": "snare/snare_v112_rr4.ogg",
+   "seconds": 1.614,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 122,
+   "rr": 1,
+   "file": "snare/snare_v122_rr1.ogg",
+   "seconds": 1.607,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 122,
+   "rr": 2,
+   "file": "snare/snare_v122_rr2.ogg",
+   "seconds": 1.634,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 122,
+   "rr": 3,
+   "file": "snare/snare_v122_rr3.ogg",
+   "seconds": 1.606,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 122,
+   "rr": 4,
+   "file": "snare/snare_v122_rr4.ogg",
+   "seconds": 1.585,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 127,
+   "rr": 1,
+   "file": "snare/snare_v127_rr1.ogg",
+   "seconds": 1.617,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 127,
+   "rr": 2,
+   "file": "snare/snare_v127_rr2.ogg",
+   "seconds": 1.593,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 127,
+   "rr": 3,
+   "file": "snare/snare_v127_rr3.ogg",
+   "seconds": 1.605,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 127,
+   "rr": 4,
+   "file": "snare/snare_v127_rr4.ogg",
+   "seconds": 1.585,
+   "peak_db": -0.5
+  }
+ ]
+}

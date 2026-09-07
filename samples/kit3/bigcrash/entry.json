@@ -1,0 +1,177 @@
+{
+ "piece": "BigCrash",
+ "art": "Crash",
+ "note": 61,
+ "gm": [],
+ "gain_db": 11.43,
+ "layers": [
+  {
+   "vel": 6,
+   "rr": 1,
+   "file": "bigcrash/bigcrash_v006_rr1.ogg",
+   "seconds": 6.421,
+   "peak_db": -20.5
+  },
+  {
+   "vel": 6,
+   "rr": 2,
+   "file": "bigcrash/bigcrash_v006_rr2.ogg",
+   "seconds": 6.621,
+   "peak_db": -20.7
+  },
+  {
+   "vel": 6,
+   "rr": 3,
+   "file": "bigcrash/bigcrash_v006_rr3.ogg",
+   "seconds": 6.447,
+   "peak_db": -20.5
+  },
+  {
+   "vel": 24,
+   "rr": 1,
+   "file": "bigcrash/bigcrash_v024_rr1.ogg",
+   "seconds": 6.426,
+   "peak_db": -16.4
+  },
+  {
+   "vel": 24,
+   "rr": 2,
+   "file": "bigcrash/bigcrash_v024_rr2.ogg",
+   "seconds": 6.392,
+   "peak_db": -17.7
+  },
+  {
+   "vel": 24,
+   "rr": 3,
+   "file": "bigcrash/bigcrash_v024_rr3.ogg",
+   "seconds": 6.442,
+   "peak_db": -17.0
+  },
+  {
+   "vel": 44,
+   "rr": 1,
+   "file": "bigcrash/bigcrash_v044_rr1.ogg",
+   "seconds": 6.475,
+   "peak_db": -13.7
+  },
+  {
+   "vel": 44,
+   "rr": 2,
+   "file": "bigcrash/bigcrash_v044_rr2.ogg",
+   "seconds": 6.13,
+   "peak_db": -13.1
+  },
+  {
+   "vel": 44,
+   "rr": 3,
+   "file": "bigcrash/bigcrash_v044_rr3.ogg",
+   "seconds": 6.257,
+   "peak_db": -14.5
+  },
+  {
+   "vel": 64,
+   "rr": 1,
+   "file": "bigcrash/bigcrash_v064_rr1.ogg",
+   "seconds": 6.043,
+   "peak_db": -11.2
+  },
+  {
+   "vel": 64,
+   "rr": 2,
+   "file": "bigcrash/bigcrash_v064_rr2.ogg",
+   "seconds": 5.983,
+   "peak_db": -9.2
+  },
+  {
+   "vel": 64,
+   "rr": 3,
+   "file": "bigcrash/bigcrash_v064_rr3.ogg",
+   "seconds": 5.926,
+   "peak_db": -9.0
+  },
+  {
+   "vel": 84,
+   "rr": 1,
+   "file": "bigcrash/bigcrash_v084_rr1.ogg",
+   "seconds": 6.233,
+   "peak_db": -7.7
+  },
+  {
+   "vel": 84,
+   "rr": 2,
+   "file": "bigcrash/bigcrash_v084_rr2.ogg",
+   "seconds": 6.113,
+   "peak_db": -7.5
+  },
+  {
+   "vel": 84,
+   "rr": 3,
+   "file": "bigcrash/bigcrash_v084_rr3.ogg",
+   "seconds": 6.11,
+   "peak_db": -7.1
+  },
+  {
+   "vel": 104,
+   "rr": 1,
+   "file": "bigcrash/bigcrash_v104_rr1.ogg",
+   "seconds": 6.816,
+   "peak_db": -3.4
+  },
+  {
+   "vel": 104,
+   "rr": 2,
+   "file": "bigcrash/bigcrash_v104_rr2.ogg",
+   "seconds": 6.721,
+   "peak_db": -4.2
+  },
+  {
+   "vel": 104,
+   "rr": 3,
+   "file": "bigcrash/bigcrash_v104_rr3.ogg",
+   "seconds": 6.661,
+   "peak_db": -4.8
+  },
+  {
+   "vel": 118,
+   "rr": 1,
+   "file": "bigcrash/bigcrash_v118_rr1.ogg",
+   "seconds": 6.282,
+   "peak_db": -2.5
+  },
+  {
+   "vel": 118,
+   "rr": 2,
+   "file": "bigcrash/bigcrash_v118_rr2.ogg",
+   "seconds": 6.222,
+   "peak_db": -1.2
+  },
+  {
+   "vel": 118,
+   "rr": 3,
+   "file": "bigcrash/bigcrash_v118_rr3.ogg",
+   "seconds": 6.303,
+   "peak_db": -2.9
+  },
+  {
+   "vel": 127,
+   "rr": 1,
+   "file": "bigcrash/bigcrash_v127_rr1.ogg",
+   "seconds": 6.637,
+   "peak_db": -2.1
+  },
+  {
+   "vel": 127,
+   "rr": 2,
+   "file": "bigcrash/bigcrash_v127_rr2.ogg",
+   "seconds": 6.343,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 127,
+   "rr": 3,
+   "file": "bigcrash/bigcrash_v127_rr3.ogg",
+   "seconds": 6.494,
+   "peak_db": -1.4
+  }
+ ]
+}

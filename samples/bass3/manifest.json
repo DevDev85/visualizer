@@ -1,0 +1,724 @@
+{
+ "samplerate": 48000,
+ "mono": true,
+ "lo": 24,
+ "hi": 65,
+ "hold": 6.0,
+ "notes": {
+  "24": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_24_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_24_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_24_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "25": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_25_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_25_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_25_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "26": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_26_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_26_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_26_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "27": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_27_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_27_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_27_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "28": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_28_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_28_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_28_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "29": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_29_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_29_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_29_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "30": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_30_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_30_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_30_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "31": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_31_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_31_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_31_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "32": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_32_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_32_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_32_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "33": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_33_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_33_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_33_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "34": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_34_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_34_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_34_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "35": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_35_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_35_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_35_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "36": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_36_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_36_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_36_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "37": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_37_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_37_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_37_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "38": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_38_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_38_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_38_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "39": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_39_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_39_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_39_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "40": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_40_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_40_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_40_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "41": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_41_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_41_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_41_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "42": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_42_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_42_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_42_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "43": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_43_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_43_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_43_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "44": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_44_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_44_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_44_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "45": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_45_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_45_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_45_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "46": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_46_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_46_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_46_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "47": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_47_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_47_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_47_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "48": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_48_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_48_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_48_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "49": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_49_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_49_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_49_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "50": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_50_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_50_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_50_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "51": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_51_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_51_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_51_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "52": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_52_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_52_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_52_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "53": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_53_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_53_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_53_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "54": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_54_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_54_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_54_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "55": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_55_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_55_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_55_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "56": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_56_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_56_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_56_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "57": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_57_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_57_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_57_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "58": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_58_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_58_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_58_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "59": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_59_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_59_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_59_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "60": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_60_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_60_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_60_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "61": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_61_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_61_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_61_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "62": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_62_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_62_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_62_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "63": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_63_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_63_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_63_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "64": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_64_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_64_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_64_rr3.ogg",
+    "seconds": 5.0
+   }
+  ],
+  "65": [
+   {
+    "rr": 1,
+    "file": "avalanchebassii_65_rr1.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 2,
+    "file": "avalanchebassii_65_rr2.ogg",
+    "seconds": 5.0
+   },
+   {
+    "rr": 3,
+    "file": "avalanchebassii_65_rr3.ogg",
+    "seconds": 5.0
+   }
+  ]
+ },
+ "transpose": 12
+}

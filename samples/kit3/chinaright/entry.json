@@ -1,0 +1,177 @@
+{
+ "piece": "ChinaRight",
+ "art": "Crash",
+ "note": 65,
+ "gm": [],
+ "gain_db": 12.09,
+ "layers": [
+  {
+   "vel": 6,
+   "rr": 1,
+   "file": "chinaright/chinaright_v006_rr1.ogg",
+   "seconds": 5.0,
+   "peak_db": -18.6
+  },
+  {
+   "vel": 6,
+   "rr": 2,
+   "file": "chinaright/chinaright_v006_rr2.ogg",
+   "seconds": 5.0,
+   "peak_db": -18.5
+  },
+  {
+   "vel": 6,
+   "rr": 3,
+   "file": "chinaright/chinaright_v006_rr3.ogg",
+   "seconds": 5.0,
+   "peak_db": -18.1
+  },
+  {
+   "vel": 24,
+   "rr": 1,
+   "file": "chinaright/chinaright_v024_rr1.ogg",
+   "seconds": 5.0,
+   "peak_db": -15.4
+  },
+  {
+   "vel": 24,
+   "rr": 2,
+   "file": "chinaright/chinaright_v024_rr2.ogg",
+   "seconds": 5.0,
+   "peak_db": -14.9
+  },
+  {
+   "vel": 24,
+   "rr": 3,
+   "file": "chinaright/chinaright_v024_rr3.ogg",
+   "seconds": 5.0,
+   "peak_db": -14.9
+  },
+  {
+   "vel": 44,
+   "rr": 1,
+   "file": "chinaright/chinaright_v044_rr1.ogg",
+   "seconds": 5.0,
+   "peak_db": -11.7
+  },
+  {
+   "vel": 44,
+   "rr": 2,
+   "file": "chinaright/chinaright_v044_rr2.ogg",
+   "seconds": 5.0,
+   "peak_db": -13.1
+  },
+  {
+   "vel": 44,
+   "rr": 3,
+   "file": "chinaright/chinaright_v044_rr3.ogg",
+   "seconds": 4.893,
+   "peak_db": -13.5
+  },
+  {
+   "vel": 64,
+   "rr": 1,
+   "file": "chinaright/chinaright_v064_rr1.ogg",
+   "seconds": 5.0,
+   "peak_db": -8.9
+  },
+  {
+   "vel": 64,
+   "rr": 2,
+   "file": "chinaright/chinaright_v064_rr2.ogg",
+   "seconds": 4.628,
+   "peak_db": -9.0
+  },
+  {
+   "vel": 64,
+   "rr": 3,
+   "file": "chinaright/chinaright_v064_rr3.ogg",
+   "seconds": 4.698,
+   "peak_db": -8.6
+  },
+  {
+   "vel": 84,
+   "rr": 1,
+   "file": "chinaright/chinaright_v084_rr1.ogg",
+   "seconds": 5.0,
+   "peak_db": -5.4
+  },
+  {
+   "vel": 84,
+   "rr": 2,
+   "file": "chinaright/chinaright_v084_rr2.ogg",
+   "seconds": 4.774,
+   "peak_db": -6.8
+  },
+  {
+   "vel": 84,
+   "rr": 3,
+   "file": "chinaright/chinaright_v084_rr3.ogg",
+   "seconds": 4.791,
+   "peak_db": -6.3
+  },
+  {
+   "vel": 104,
+   "rr": 1,
+   "file": "chinaright/chinaright_v104_rr1.ogg",
+   "seconds": 5.0,
+   "peak_db": -4.3
+  },
+  {
+   "vel": 104,
+   "rr": 2,
+   "file": "chinaright/chinaright_v104_rr2.ogg",
+   "seconds": 5.0,
+   "peak_db": -3.4
+  },
+  {
+   "vel": 104,
+   "rr": 3,
+   "file": "chinaright/chinaright_v104_rr3.ogg",
+   "seconds": 5.0,
+   "peak_db": -3.8
+  },
+  {
+   "vel": 118,
+   "rr": 1,
+   "file": "chinaright/chinaright_v118_rr1.ogg",
+   "seconds": 5.0,
+   "peak_db": -1.5
+  },
+  {
+   "vel": 118,
+   "rr": 2,
+   "file": "chinaright/chinaright_v118_rr2.ogg",
+   "seconds": 5.0,
+   "peak_db": -1.4
+  },
+  {
+   "vel": 118,
+   "rr": 3,
+   "file": "chinaright/chinaright_v118_rr3.ogg",
+   "seconds": 5.0,
+   "peak_db": -1.4
+  },
+  {
+   "vel": 127,
+   "rr": 1,
+   "file": "chinaright/chinaright_v127_rr1.ogg",
+   "seconds": 5.0,
+   "peak_db": -0.8
+  },
+  {
+   "vel": 127,
+   "rr": 2,
+   "file": "chinaright/chinaright_v127_rr2.ogg",
+   "seconds": 5.0,
+   "peak_db": -0.5
+  },
+  {
+   "vel": 127,
+   "rr": 3,
+   "file": "chinaright/chinaright_v127_rr3.ogg",
+   "seconds": 5.0,
+   "peak_db": -0.6
+  }
+ ]
+}

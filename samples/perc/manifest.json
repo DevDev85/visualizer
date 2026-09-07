@@ -1,0 +1,221 @@
+{
+ "samplerate": 44100,
+ "notes": {
+  "31": {
+   "file": "31.wav",
+   "name": "Sticks",
+   "family": "stick",
+   "gain": 0.7
+  },
+  "33": {
+   "file": "33.wav",
+   "name": "Metronome click",
+   "family": "stick",
+   "gain": 0.6
+  },
+  "34": {
+   "file": "34.wav",
+   "name": "Metronome bell",
+   "family": "bell",
+   "gain": 0.6
+  },
+  "37": {
+   "file": "37.wav",
+   "name": "Side stick",
+   "family": "stick",
+   "gain": 0.9
+  },
+  "39": {
+   "file": "39.wav",
+   "name": "Hand clap",
+   "family": "clap",
+   "gain": 0.9
+  },
+  "54": {
+   "file": "54.wav",
+   "name": "Tambourine",
+   "family": "shaker",
+   "gain": 0.8
+  },
+  "56": {
+   "file": "56.wav",
+   "name": "Cowbell",
+   "family": "bell",
+   "gain": 0.85
+  },
+  "58": {
+   "file": "58.wav",
+   "name": "Vibraslap",
+   "family": "rattle",
+   "gain": 0.8
+  },
+  "60": {
+   "file": "60.wav",
+   "name": "Bongo high",
+   "family": "skin",
+   "gain": 1.0
+  },
+  "61": {
+   "file": "61.wav",
+   "name": "Bongo low",
+   "family": "skin",
+   "gain": 1.0
+  },
+  "62": {
+   "file": "62.wav",
+   "name": "Conga high mute",
+   "family": "skin",
+   "gain": 0.95
+  },
+  "63": {
+   "file": "63.wav",
+   "name": "Conga high open",
+   "family": "skin",
+   "gain": 1.0
+  },
+  "64": {
+   "file": "64.wav",
+   "name": "Conga low open",
+   "family": "skin",
+   "gain": 1.0
+  },
+  "65": {
+   "file": "65.wav",
+   "name": "Timbale high",
+   "family": "shell",
+   "gain": 0.95
+  },
+  "66": {
+   "file": "66.wav",
+   "name": "Timbale low",
+   "family": "shell",
+   "gain": 0.95
+  },
+  "67": {
+   "file": "67.wav",
+   "name": "Agogo high",
+   "family": "bell",
+   "gain": 0.7
+  },
+  "68": {
+   "file": "68.wav",
+   "name": "Agogo low",
+   "family": "bell",
+   "gain": 0.7
+  },
+  "69": {
+   "file": "69.wav",
+   "name": "Cabasa",
+   "family": "shaker",
+   "gain": 0.65
+  },
+  "70": {
+   "file": "70.wav",
+   "name": "Maracas",
+   "family": "shaker",
+   "gain": 0.65
+  },
+  "71": {
+   "file": "71.wav",
+   "name": "Whistle short",
+   "family": "whistle",
+   "gain": 0.6
+  },
+  "72": {
+   "file": "72.wav",
+   "name": "Whistle long",
+   "family": "whistle",
+   "gain": 0.6
+  },
+  "73": {
+   "file": "73.wav",
+   "name": "Guiro short",
+   "family": "rattle",
+   "gain": 0.7
+  },
+  "74": {
+   "file": "74.wav",
+   "name": "Guiro long",
+   "family": "rattle",
+   "gain": 0.7
+  },
+  "75": {
+   "file": "75.wav",
+   "name": "Claves",
+   "family": "stick",
+   "gain": 0.8
+  },
+  "76": {
+   "file": "76.wav",
+   "name": "Woodblock high",
+   "family": "stick",
+   "gain": 0.85
+  },
+  "77": {
+   "file": "77.wav",
+   "name": "Woodblock low",
+   "family": "stick",
+   "gain": 0.85
+  },
+  "78": {
+   "file": "78.wav",
+   "name": "Cuica mute",
+   "family": "skin",
+   "gain": 0.7
+  },
+  "79": {
+   "file": "79.wav",
+   "name": "Cuica open",
+   "family": "skin",
+   "gain": 0.7
+  },
+  "80": {
+   "file": "80.wav",
+   "name": "Triangle mute",
+   "family": "bell",
+   "gain": 0.6
+  },
+  "81": {
+   "file": "81.wav",
+   "name": "Triangle open",
+   "family": "bell",
+   "gain": 0.6
+  },
+  "82": {
+   "file": "82.wav",
+   "name": "Shaker",
+   "family": "shaker",
+   "gain": 0.65
+  },
+  "83": {
+   "file": "83.wav",
+   "name": "Jingle bell",
+   "family": "shaker",
+   "gain": 0.6
+  },
+  "84": {
+   "file": "84.wav",
+   "name": "Bell tree",
+   "family": "bell",
+   "gain": 0.55
+  },
+  "85": {
+   "file": "85.wav",
+   "name": "Castanets",
+   "family": "stick",
+   "gain": 0.75
+  },
+  "86": {
+   "file": "86.wav",
+   "name": "Surdo mute",
+   "family": "skin",
+   "gain": 1.0
+  },
+  "87": {
+   "file": "87.wav",
+   "name": "Surdo open",
+   "family": "skin",
+   "gain": 1.0
+  }
+ }
+}

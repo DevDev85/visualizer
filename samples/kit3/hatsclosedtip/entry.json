@@ -1,0 +1,375 @@
+{
+ "piece": "Hats",
+ "art": "ClosedTip",
+ "note": 51,
+ "gm": [
+  42
+ ],
+ "gain_db": 13.18,
+ "layers": [
+  {
+   "vel": 4,
+   "rr": 1,
+   "file": "hatsclosedtip/hatsclosedtip_v004_rr1.ogg",
+   "seconds": 1.002,
+   "peak_db": -23.7
+  },
+  {
+   "vel": 4,
+   "rr": 2,
+   "file": "hatsclosedtip/hatsclosedtip_v004_rr2.ogg",
+   "seconds": 0.971,
+   "peak_db": -19.9
+  },
+  {
+   "vel": 4,
+   "rr": 3,
+   "file": "hatsclosedtip/hatsclosedtip_v004_rr3.ogg",
+   "seconds": 1.036,
+   "peak_db": -21.3
+  },
+  {
+   "vel": 4,
+   "rr": 4,
+   "file": "hatsclosedtip/hatsclosedtip_v004_rr4.ogg",
+   "seconds": 1.234,
+   "peak_db": -22.1
+  },
+  {
+   "vel": 14,
+   "rr": 1,
+   "file": "hatsclosedtip/hatsclosedtip_v014_rr1.ogg",
+   "seconds": 1.05,
+   "peak_db": -20.2
+  },
+  {
+   "vel": 14,
+   "rr": 2,
+   "file": "hatsclosedtip/hatsclosedtip_v014_rr2.ogg",
+   "seconds": 1.172,
+   "peak_db": -18.9
+  },
+  {
+   "vel": 14,
+   "rr": 3,
+   "file": "hatsclosedtip/hatsclosedtip_v014_rr3.ogg",
+   "seconds": 1.225,
+   "peak_db": -21.3
+  },
+  {
+   "vel": 14,
+   "rr": 4,
+   "file": "hatsclosedtip/hatsclosedtip_v014_rr4.ogg",
+   "seconds": 1.272,
+   "peak_db": -20.9
+  },
+  {
+   "vel": 24,
+   "rr": 1,
+   "file": "hatsclosedtip/hatsclosedtip_v024_rr1.ogg",
+   "seconds": 0.9,
+   "peak_db": -20.3
+  },
+  {
+   "vel": 24,
+   "rr": 2,
+   "file": "hatsclosedtip/hatsclosedtip_v024_rr2.ogg",
+   "seconds": 0.751,
+   "peak_db": -18.6
+  },
+  {
+   "vel": 24,
+   "rr": 3,
+   "file": "hatsclosedtip/hatsclosedtip_v024_rr3.ogg",
+   "seconds": 0.881,
+   "peak_db": -19.7
+  },
+  {
+   "vel": 24,
+   "rr": 4,
+   "file": "hatsclosedtip/hatsclosedtip_v024_rr4.ogg",
+   "seconds": 0.909,
+   "peak_db": -20.3
+  },
+  {
+   "vel": 35,
+   "rr": 1,
+   "file": "hatsclosedtip/hatsclosedtip_v035_rr1.ogg",
+   "seconds": 0.967,
+   "peak_db": -15.8
+  },
+  {
+   "vel": 35,
+   "rr": 2,
+   "file": "hatsclosedtip/hatsclosedtip_v035_rr2.ogg",
+   "seconds": 1.07,
+   "peak_db": -14.9
+  },
+  {
+   "vel": 35,
+   "rr": 3,
+   "file": "hatsclosedtip/hatsclosedtip_v035_rr3.ogg",
+   "seconds": 0.937,
+   "peak_db": -14.4
+  },
+  {
+   "vel": 35,
+   "rr": 4,
+   "file": "hatsclosedtip/hatsclosedtip_v035_rr4.ogg",
+   "seconds": 1.064,
+   "peak_db": -15.3
+  },
+  {
+   "vel": 46,
+   "rr": 1,
+   "file": "hatsclosedtip/hatsclosedtip_v046_rr1.ogg",
+   "seconds": 1.033,
+   "peak_db": -13.8
+  },
+  {
+   "vel": 46,
+   "rr": 2,
+   "file": "hatsclosedtip/hatsclosedtip_v046_rr2.ogg",
+   "seconds": 1.027,
+   "peak_db": -14.3
+  },
+  {
+   "vel": 46,
+   "rr": 3,
+   "file": "hatsclosedtip/hatsclosedtip_v046_rr3.ogg",
+   "seconds": 1.043,
+   "peak_db": -16.0
+  },
+  {
+   "vel": 46,
+   "rr": 4,
+   "file": "hatsclosedtip/hatsclosedtip_v046_rr4.ogg",
+   "seconds": 1.015,
+   "peak_db": -14.0
+  },
+  {
+   "vel": 57,
+   "rr": 1,
+   "file": "hatsclosedtip/hatsclosedtip_v057_rr1.ogg",
+   "seconds": 1.217,
+   "peak_db": -15.2
+  },
+  {
+   "vel": 57,
+   "rr": 2,
+   "file": "hatsclosedtip/hatsclosedtip_v057_rr2.ogg",
+   "seconds": 1.138,
+   "peak_db": -12.8
+  },
+  {
+   "vel": 57,
+   "rr": 3,
+   "file": "hatsclosedtip/hatsclosedtip_v057_rr3.ogg",
+   "seconds": 1.092,
+   "peak_db": -12.9
+  },
+  {
+   "vel": 57,
+   "rr": 4,
+   "file": "hatsclosedtip/hatsclosedtip_v057_rr4.ogg",
+   "seconds": 1.195,
+   "peak_db": -10.0
+  },
+  {
+   "vel": 68,
+   "rr": 1,
+   "file": "hatsclosedtip/hatsclosedtip_v068_rr1.ogg",
+   "seconds": 1.316,
+   "peak_db": -9.8
+  },
+  {
+   "vel": 68,
+   "rr": 2,
+   "file": "hatsclosedtip/hatsclosedtip_v068_rr2.ogg",
+   "seconds": 1.188,
+   "peak_db": -10.1
+  },
+  {
+   "vel": 68,
+   "rr": 3,
+   "file": "hatsclosedtip/hatsclosedtip_v068_rr3.ogg",
+   "seconds": 1.185,
+   "peak_db": -11.6
+  },
+  {
+   "vel": 68,
+   "rr": 4,
+   "file": "hatsclosedtip/hatsclosedtip_v068_rr4.ogg",
+   "seconds": 1.159,
+   "peak_db": -12.0
+  },
+  {
+   "vel": 79,
+   "rr": 1,
+   "file": "hatsclosedtip/hatsclosedtip_v079_rr1.ogg",
+   "seconds": 1.125,
+   "peak_db": -6.4
+  },
+  {
+   "vel": 79,
+   "rr": 2,
+   "file": "hatsclosedtip/hatsclosedtip_v079_rr2.ogg",
+   "seconds": 1.323,
+   "peak_db": -10.7
+  },
+  {
+   "vel": 79,
+   "rr": 3,
+   "file": "hatsclosedtip/hatsclosedtip_v079_rr3.ogg",
+   "seconds": 1.357,
+   "peak_db": -8.9
+  },
+  {
+   "vel": 79,
+   "rr": 4,
+   "file": "hatsclosedtip/hatsclosedtip_v079_rr4.ogg",
+   "seconds": 1.249,
+   "peak_db": -11.3
+  },
+  {
+   "vel": 90,
+   "rr": 1,
+   "file": "hatsclosedtip/hatsclosedtip_v090_rr1.ogg",
+   "seconds": 1.353,
+   "peak_db": -9.0
+  },
+  {
+   "vel": 90,
+   "rr": 2,
+   "file": "hatsclosedtip/hatsclosedtip_v090_rr2.ogg",
+   "seconds": 1.26,
+   "peak_db": -6.2
+  },
+  {
+   "vel": 90,
+   "rr": 3,
+   "file": "hatsclosedtip/hatsclosedtip_v090_rr3.ogg",
+   "seconds": 1.246,
+   "peak_db": -7.0
+  },
+  {
+   "vel": 90,
+   "rr": 4,
+   "file": "hatsclosedtip/hatsclosedtip_v090_rr4.ogg",
+   "seconds": 1.303,
+   "peak_db": -4.1
+  },
+  {
+   "vel": 101,
+   "rr": 1,
+   "file": "hatsclosedtip/hatsclosedtip_v101_rr1.ogg",
+   "seconds": 1.365,
+   "peak_db": -8.1
+  },
+  {
+   "vel": 101,
+   "rr": 2,
+   "file": "hatsclosedtip/hatsclosedtip_v101_rr2.ogg",
+   "seconds": 1.275,
+   "peak_db": -7.5
+  },
+  {
+   "vel": 101,
+   "rr": 3,
+   "file": "hatsclosedtip/hatsclosedtip_v101_rr3.ogg",
+   "seconds": 1.331,
+   "peak_db": -6.4
+  },
+  {
+   "vel": 101,
+   "rr": 4,
+   "file": "hatsclosedtip/hatsclosedtip_v101_rr4.ogg",
+   "seconds": 1.256,
+   "peak_db": -5.4
+  },
+  {
+   "vel": 112,
+   "rr": 1,
+   "file": "hatsclosedtip/hatsclosedtip_v112_rr1.ogg",
+   "seconds": 1.338,
+   "peak_db": -1.6
+  },
+  {
+   "vel": 112,
+   "rr": 2,
+   "file": "hatsclosedtip/hatsclosedtip_v112_rr2.ogg",
+   "seconds": 1.4,
+   "peak_db": -5.3
+  },
+  {
+   "vel": 112,
+   "rr": 3,
+   "file": "hatsclosedtip/hatsclosedtip_v112_rr3.ogg",
+   "seconds": 1.23,
+   "peak_db": -2.9
+  },
+  {
+   "vel": 112,
+   "rr": 4,
+   "file": "hatsclosedtip/hatsclosedtip_v112_rr4.ogg",
+   "seconds": 1.327,
+   "peak_db": -4.0
+  },
+  {
+   "vel": 122,
+   "rr": 1,
+   "file": "hatsclosedtip/hatsclosedtip_v122_rr1.ogg",
+   "seconds": 1.326,
+   "peak_db": -3.1
+  },
+  {
+   "vel": 122,
+   "rr": 2,
+   "file": "hatsclosedtip/hatsclosedtip_v122_rr2.ogg",
+   "seconds": 1.341,
+   "peak_db": -3.9
+  },
+  {
+   "vel": 122,
+   "rr": 3,
+   "file": "hatsclosedtip/hatsclosedtip_v122_rr3.ogg",
+   "seconds": 1.222,
+   "peak_db": -3.7
+  },
+  {
+   "vel": 122,
+   "rr": 4,
+   "file": "hatsclosedtip/hatsclosedtip_v122_rr4.ogg",
+   "seconds": 1.261,
+   "peak_db": -2.2
+  },
+  {
+   "vel": 127,
+   "rr": 1,
+   "file": "hatsclosedtip/hatsclosedtip_v127_rr1.ogg",
+   "seconds": 1.358,
+   "peak_db": -4.2
+  },
+  {
+   "vel": 127,
+   "rr": 2,
+   "file": "hatsclosedtip/hatsclosedtip_v127_rr2.ogg",
+   "seconds": 1.329,
+   "peak_db": -2.4
+  },
+  {
+   "vel": 127,
+   "rr": 3,
+   "file": "hatsclosedtip/hatsclosedtip_v127_rr3.ogg",
+   "seconds": 1.4,
+   "peak_db": -4.2
+  },
+  {
+   "vel": 127,
+   "rr": 4,
+   "file": "hatsclosedtip/hatsclosedtip_v127_rr4.ogg",
+   "seconds": 1.4,
+   "peak_db": -0.5
+  }
+ ]
+}
