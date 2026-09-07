@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="build" content="2026-09-07 15:24:54 UTC">
+  <meta name="build" content="2026-09-07 15:42:23 UTC">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Drum Visualizer</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -10,8 +10,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <meta name="theme-color" content="#0b0b10">
-  <script type="module" crossorigin src="/assets/index-BCOYj3af.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DBrEUjBh.css">
+  <script type="module" crossorigin src="/assets/index-BGASfH-J.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-MVWGEEND.css">
 </head>
 <body>
   <div id="app" class="app is-booting">
@@ -116,7 +116,7 @@
 
       <footer class="panel-foot hud-item">
         <p id="license-status" class="license-status">—</p>
-        <div class="license-links"><a class="promo-link" id="license-manage" href="#" target="_blank" rel="noopener">GET A PASS ↗</a><a class="promo-link license-signout" id="license-signout" href="#">SIGN OUT</a></div>
+        <div class="license-links"><a class="promo-link" id="license-manage" href="#" target="_blank" rel="noopener" title="Credit packs on developdevice.com · 1 credit = 1 exported video, credits never expire">GET CREDITS ↗</a><a class="promo-link license-signout" id="license-signout" href="#">SIGN OUT</a></div>
         <p>MP4 (H.264 + AAC) rendered in this browser · Chrome or Edge</p>
       </footer>
     </aside>
@@ -501,11 +501,11 @@
           <span class="tl-readout dim" id="tl-bar">—</span>
         </div>
         <div id="section-controls" class="section-controls" hidden>
-          <span class="section-label" title="The bars that play and go into the video">LOOP</span>
-          <label class="bar-field"><span>FROM</span><input type="number" id="from-bar" min="1" step="1"></label>
-          <label class="bar-field"><span>TO</span><input type="number" id="to-bar" min="1" step="1"></label>
-          <select id="tl-len" class="tl-select" title="Loop length, counted from FROM · Whole song = the entire tab">
-            <option value="">LEN</option>
+          <span class="section-label" title="The bars that play in the preview and go into the video">LOOP</span>
+          <label class="bar-field" title="First bar of the loop"><span>FROM BAR</span><input type="number" id="from-bar" min="1" step="1"></label>
+          <label class="bar-field" title="Last bar of the loop"><span>TO BAR</span><input type="number" id="to-bar" min="1" step="1"></label>
+          <select id="tl-len" class="tl-select" title="Set the loop length, counted from the FROM bar · Whole song = the entire tab">
+            <option value="">LENGTH…</option>
             <option value="1">1 bar</option>
             <option value="2">2 bars</option>
             <option value="4">4 bars</option>
@@ -519,13 +519,13 @@
         <div class="tl-tools">
           <button class="tl-btn" id="tl-zoom-out" title="Zoom out · −" aria-label="Zoom out">−</button>
           <button class="tl-btn" id="tl-zoom-in" title="Zoom in · +" aria-label="Zoom in">+</button>
-          <button class="tl-btn txt" id="tl-sel" title="Zoom to loop · S">LOOP</button>
-          <button class="tl-btn txt" id="tl-fit" title="Whole song · 0">ALL</button>
-          <label class="switch mini" title="Scroll with the playhead · F"><input type="checkbox" id="tl-follow" checked><span class="sw"></span><span class="sw-label">FOLLOW</span></label>
+          <button class="tl-btn txt" id="tl-sel" title="Zoom the timeline to the loop · S">ZOOM LOOP</button>
+          <button class="tl-btn txt" id="tl-fit" title="Show the whole song · 0">WHOLE SONG</button>
+          <label class="switch mini" title="Keep the playhead in view while playing · F"><input type="checkbox" id="tl-follow" checked><span class="sw"></span><span class="sw-label">FOLLOW</span></label>
         </div>
         <span id="timeline-range" class="dock-range">—</span>
       </div>
-      <canvas id="timeline" height="84" title="Click / drag anywhere: play from there · loop bar: drag to move, ends to resize · shift+drag: new loop · double-click: loop one bar · wheel zoom · shift+wheel / alt+drag pan"></canvas>
+      <canvas id="timeline" height="96" title="Click anywhere: play from there · orange loop bar: drag to move, drag its ends to resize · shift + drag: new loop · double-click: one-bar loop · mouse wheel: zoom · shift + wheel: scroll"></canvas>
     </footer>
 
     <div id="drop-overlay"><div class="drop-overlay-inner"><span>DROP TO VISUALIZE</span></div></div>
@@ -618,7 +618,7 @@
           <figure><img src="/media/seq-169-dd.jpg" alt="Step ring style" loading="lazy"><figcaption>Step ring · YouTube 16:9</figcaption></figure>
         </div>
         <div class="lg-links">
-          <a class="lg-btn lg-btn--primary" id="license-plans" href="#" target="_blank" rel="noopener">Get a 30-day pass ↗</a>
+          <a class="lg-btn lg-btn--primary" id="license-plans" href="#" target="_blank" rel="noopener">Get export credits ↗</a>
           <a class="lg-btn lg-btn--ghost" href="https://www.youtube.com/playlist?list=PLLazyhp1zxyI" target="_blank" rel="noopener">Watch examples on YouTube ↗</a>
         </div>
       </section>
@@ -626,7 +626,7 @@
       <form id="license-form" class="license-card" autocomplete="on">
         <p class="lg-kicker">Drum Visualizer</p>
         <h2>Sign in</h2>
-        <p class="license-lead">Use the e-mail from your checkout and the order number from the confirmation e-mail. A pass is valid for 30 days from the purchase.</p>
+        <p class="license-lead">Use the e-mail from your checkout and the order number from the confirmation e-mail. Every credit pack you buy is added to the same account.</p>
         <div class="license-modes" hidden>
           <button type="button" class="btn-mini" data-license-mode="order">ORDER</button>
           <button type="button" class="btn-mini" data-license-mode="key">LICENCE KEY</button>
@@ -643,7 +643,7 @@
         <div class="license-actions">
           <button type="submit" id="license-submit" class="btn-primary">SIGN IN</button>
         </div>
-        <p class="hint">No pass yet? <a class="lg-inline" id="license-plans-2" href="#" target="_blank" rel="noopener">Get one on developdevice.com</a>. Each pass comes with a number of exports for its 30 days. Nothing is uploaded — the video is rendered here, in your browser.</p>
+        <p class="hint">No credits yet? <a class="lg-inline" id="license-plans-2" href="#" target="_blank" rel="noopener">Get a credit pack on developdevice.com</a>. 1 credit = 1 exported video; credits never expire and add up with every pack. Nothing is uploaded — the video is rendered here, in your browser.</p>
         <p class="lg-foot">Chrome or Edge on a desktop computer · H.264 + AAC MP4 · 16:9 and 9:16</p>
       </form>
     </div>
