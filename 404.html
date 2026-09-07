@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="build" content="2026-09-07 13:34:09 UTC">
+  <meta name="build" content="2026-09-07 13:49:01 UTC">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Drum Visualizer</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -10,8 +10,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <meta name="theme-color" content="#0b0b10">
-  <script type="module" crossorigin src="/assets/index-Bt99h023.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-t1Euzjtj.css">
+  <script type="module" crossorigin src="/assets/index-BG3-zsqX.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CozUf0RK.css">
 </head>
 <body>
   <div id="app" class="app is-booting">
@@ -194,8 +194,14 @@
           <label class="switch"><input type="checkbox" id="captions-toggle" checked><span class="sw"></span><span class="sw-label">CAPTIONS</span></label>
           <label class="switch"><input type="checkbox" id="guides-toggle"><span class="sw"></span><span class="sw-label">UI GUIDES</span></label>
         </div>
-        <div class="row cta-row" title="Animated SUBSCRIBE card in the bottom corner, in the preview and in every export">
-          <label class="switch"><input type="checkbox" id="cta-toggle" checked><span class="sw"></span><span class="sw-label">SUBSCRIBE CARD</span></label>
+        <div class="row cta-row" title="Animated follow / subscribe card in the bottom corner, in the preview and in every export. Name empty = the CHANNEL / BRAND above. AUTO platform: YouTube for 16:9 and Shorts, Instagram for Stories, Reels and 1:1">
+          <label class="switch"><input type="checkbox" id="cta-toggle" checked><span class="sw"></span><span class="sw-label">FOLLOW / SUBSCRIBE CARD</span></label>
+          <div class="field cta-text"><label for="cta-name">NAME</label><input type="text" id="cta-name" placeholder="= channel / brand" maxlength="40" autocomplete="off" spellcheck="false"></div>
+          <div class="field cta-text"><label for="cta-handle">HANDLE</label><input type="text" id="cta-handle" placeholder="@yourchannel" maxlength="40" autocomplete="off" spellcheck="false"></div>
+          <div class="field cta-text"><label for="cta-platform">PLATFORM</label><div class="select-wrap"><select id="cta-platform">
+            <option value="auto" selected>AUTO (by format)</option><option value="youtube">YouTube</option><option value="instagram">Instagram</option><option value="tiktok">TikTok</option><option value="facebook">Facebook</option><option value="twitch">Twitch</option><option value="x">X</option>
+          </select></div></div>
+          <div class="field cta-text" title="Button text · empty = SUBSCRIBE (YouTube) or FOLLOW (other platforms)"><label for="cta-label">BUTTON</label><input type="text" id="cta-label" placeholder="auto" maxlength="18" autocomplete="off" spellcheck="false"></div>
           <div class="field field-mini"><label for="cta-at">FIRST AT s</label><input type="number" id="cta-at" min="1" max="3600" step="1" value="15"></div>
           <div class="field field-mini" title="Repeat interval in seconds · 0 = show it once"><label for="cta-every">EVERY s</label><input type="number" id="cta-every" min="0" max="3600" step="1" value="25"></div>
         </div>
@@ -603,7 +609,7 @@
         <button type="button" class="btn-mini" data-license-mode="key">LICENCE KEY</button>
       </div>
       <div id="license-order-fields">
-        <div class="field"><label for="license-email">E-MAIL</label><input type="email" id="license-email" placeholder="you@example.com" autocomplete="email" required></div>
+        <div class="field"><label for="license-email">E-MAIL</label><input type="email" id="license-email" placeholder="you@example.com" autocomplete="email"></div>
         <div class="field"><label for="license-order">ORDER NUMBER</label><input type="text" id="license-order" placeholder="#1234" autocomplete="off" spellcheck="false"></div>
       </div>
       <div id="license-key-fields" hidden>
