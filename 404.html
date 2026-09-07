@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="build" content="2026-09-07 15:13:45 UTC">
+  <meta name="build" content="2026-09-07 15:18:13 UTC">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Drum Visualizer</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -10,8 +10,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <meta name="theme-color" content="#0b0b10">
-  <script type="module" crossorigin src="/assets/index-8UaH8zAE.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CNpP51p8.css">
+  <script type="module" crossorigin src="/assets/index-Br53w2Er.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CSW-tMsI.css">
 </head>
 <body>
   <div id="app" class="app is-booting">
@@ -598,27 +598,54 @@
 
   <!-- ===================================================== licence gate -->
   <div id="license-gate" class="license-gate" hidden>
-    <form id="license-form" class="license-card" autocomplete="on">
-      <h2>DRUM VISUALIZER</h2>
-      <p class="license-lead">Sign in with the e-mail you used at checkout and your order number — both are on your order confirmation. A pass is valid for 30 days from the purchase.</p>
-      <div class="license-modes">
-        <button type="button" class="btn-mini" data-license-mode="order">ORDER</button>
-        <button type="button" class="btn-mini" data-license-mode="key">LICENCE KEY</button>
-      </div>
-      <div id="license-order-fields">
-        <div class="field"><label for="license-email">E-MAIL</label><input type="email" id="license-email" placeholder="you@example.com" autocomplete="email"></div>
-        <div class="field"><label for="license-order">ORDER NUMBER</label><input type="text" id="license-order" placeholder="#1234" autocomplete="off" spellcheck="false"></div>
-      </div>
-      <div id="license-key-fields" hidden>
-        <div class="field"><label for="license-key">LICENCE KEY</label><input type="text" id="license-key" placeholder="DV-XXXX-XXXX-XXXX" autocomplete="off" spellcheck="false"></div>
-      </div>
-      <p id="license-error" class="license-error" role="alert"></p>
-      <div class="license-actions">
-        <button type="submit" id="license-submit" class="btn-primary">SIGN IN</button>
-        <a class="promo-link" id="license-plans" href="#" target="_blank" rel="noopener">GET A PASS ↗</a>
-      </div>
-      <p class="hint">Each pass comes with a number of exports for its 30 days. The video itself is rendered in your browser — nothing is uploaded.</p>
-    </form>
+    <div class="lg-orbits" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="lg-inner">
+      <section class="lg-hero">
+        <p class="lg-kicker">Drum tabs → animated video</p>
+        <h1 class="lg-title">Every hit of the drum part.<br><span>Animated. In sync. Yours.</span></h1>
+        <p class="lg-lead">Drop a Guitar Pro or MIDI tab, or pick a song on Songsterr, and export a cinematic drum video for YouTube, Shorts, Reels or TikTok — real sampled drums, your channel on every frame, rendered in this browser.</p>
+        <ul class="lg-points">
+          <li><b>16 styles · 11 colour themes</b><span>Orbits, Blueprint, Notation, 3D scenes and more</span></li>
+          <li><b>Real sound</b><span>Three sampled kits, three basses, a rhythm guitar, mixer, EQ, mastering</span></li>
+          <li><b>Built for the feed</b><span>16:9 and 9:16 with the platforms' safe zones respected, 60 fps MP4</span></li>
+        </ul>
+        <div class="lg-showcase" data-lg-showcase>
+          <figure class="is-on"><img src="/media/orbitsx-169-dd.jpg" alt="Orbits XL style" loading="eager"><figcaption>Orbits XL · YouTube 16:9</figcaption></figure>
+          <figure><img src="/media/nebula-169-dd.jpg" alt="Nebula 3D style" loading="lazy"><figcaption>Nebula 3D · YouTube 16:9</figcaption></figure>
+          <figure><img src="/media/polygons-169-dd.jpg" alt="Polygons style" loading="lazy"><figcaption>Polygons · YouTube 16:9</figcaption></figure>
+          <figure><img src="/media/notation-169-dd.jpg" alt="Notation style on paper" loading="lazy"><figcaption>Notation · Draft paper</figcaption></figure>
+          <figure><img src="/media/kit3d-169-dd.jpg" alt="Kit 3D style" loading="lazy"><figcaption>Kit 3D · YouTube 16:9</figcaption></figure>
+          <figure><img src="/media/seq-169-dd.jpg" alt="Step ring style" loading="lazy"><figcaption>Step ring · YouTube 16:9</figcaption></figure>
+        </div>
+        <div class="lg-links">
+          <a class="lg-btn lg-btn--primary" id="license-plans" href="#" target="_blank" rel="noopener">Get a 30-day pass ↗</a>
+          <a class="lg-btn lg-btn--ghost" href="https://www.youtube.com/playlist?list=PLLazyhp1zxyI" target="_blank" rel="noopener">Watch examples on YouTube ↗</a>
+        </div>
+      </section>
+
+      <form id="license-form" class="license-card" autocomplete="on">
+        <p class="lg-kicker">Drum Visualizer</p>
+        <h2>Sign in</h2>
+        <p class="license-lead">Use the e-mail from your checkout and the order number from the confirmation e-mail. A pass is valid for 30 days from the purchase.</p>
+        <div class="license-modes" role="tablist">
+          <button type="button" class="btn-mini" data-license-mode="order">ORDER</button>
+          <button type="button" class="btn-mini" data-license-mode="key">LICENCE KEY</button>
+        </div>
+        <div id="license-order-fields">
+          <div class="field"><label for="license-email">E-MAIL</label><input type="email" id="license-email" placeholder="you@example.com" autocomplete="email"></div>
+          <div class="field"><label for="license-order">ORDER NUMBER</label><input type="text" id="license-order" placeholder="#1234" autocomplete="off" spellcheck="false"></div>
+        </div>
+        <div id="license-key-fields" hidden>
+          <div class="field"><label for="license-key">LICENCE KEY</label><input type="text" id="license-key" placeholder="DV-XXXX-XXXX-XXXX" autocomplete="off" spellcheck="false"></div>
+        </div>
+        <p id="license-error" class="license-error" role="alert"></p>
+        <div class="license-actions">
+          <button type="submit" id="license-submit" class="btn-primary">SIGN IN</button>
+        </div>
+        <p class="hint">No pass yet? <a class="lg-inline" id="license-plans-2" href="#" target="_blank" rel="noopener">Get one on developdevice.com</a>. Each pass comes with a number of exports for its 30 days. Nothing is uploaded — the video is rendered here, in your browser.</p>
+        <p class="lg-foot">Chrome or Edge on a desktop computer · H.264 + AAC MP4 · 16:9 and 9:16</p>
+      </form>
+    </div>
   </div>
 
   <div id="export-overlay" hidden>
