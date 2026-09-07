@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="build" content="2026-09-07 14:06:33 UTC">
+  <meta name="build" content="2026-09-07 14:12:38 UTC">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Drum Visualizer</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <meta name="theme-color" content="#0b0b10">
-  <script type="module" crossorigin src="/assets/index-D7im9WMI.js"></script>
+  <script type="module" crossorigin src="/assets/index-BzzNDJHc.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-BbvY3Lmg.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
         <span class="logo-mark"></span>
         <div class="brand-text">
           <h1 class="wordmark" id="wordmark">DRUM VISUALIZER</h1>
-          <span class="brand-sub">CINEMATIC · MIDI · GUITAR PRO · MP4</span>
+          <span class="brand-sub">DRUM TABS → ANIMATED VIDEO</span>
         </div>
       </div>
 
@@ -34,14 +34,14 @@
       </div>
 
       <div class="top-actions">
-        <span class="status-pill" id="samples-status"><i class="dot"></i>Loading drum samples…</span>
+        <span class="status-pill" id="samples-status" title="The drum sounds load once per session, after sign-in"><i class="dot"></i>Loading drum sounds…</span>
         <button class="icon-btn" id="toggle-docks" title="Hide panels · H" aria-label="Hide panels">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h10M4 18h16"/></svg>
         </button>
         <button class="icon-btn" id="open-palette" title="Command palette · Ctrl K" aria-label="Command palette">
           <span class="kbd">⌘K</span>
         </button>
-        <button id="export-btn" class="btn-primary magnetic">
+        <button id="export-btn" class="btn-primary magnetic" title="Render the video as MP4 in this browser · E">
           <span class="btn-label">EXPORT</span>
           <span class="btn-glow"></span>
         </button>
@@ -61,20 +61,20 @@
 
     <!-- ========================================================= left dock -->
     <aside id="panel" class="hud dock dock-left">
-      <section class="panel-section hud-item" id="project-section">
+      <section class="panel-section hud-item" id="project-section" title="A project is the whole thing: the tab, the loop, the look and the sound. Save it as a file to come back to it or to move it to another computer.">
         <h2 class="section-label">PROJECT</h2>
         <div class="row"><button id="project-save" class="btn-mini">SAVE PROJECT</button>
         <label class="btn-mini preset-import">OPEN PROJECT<input id="project-open" type="file" accept=".drumviz,application/json" hidden></label></div>
-        <p class="hint" id="project-status" role="status">Autosave on · this device</p>
+        <p class="hint" id="project-status" role="status">Autosaved in this browser</p>
       </section>
-      <section class="panel-section hud-item" id="drop-section">
+      <section class="panel-section hud-item" id="drop-section" title="Where the drum part comes from: a Guitar Pro or MIDI file, a Songsterr search, or a direct link to a file">
         <h2 class="section-label">SOURCE</h2>
         <div id="dropzone" tabindex="0" class="magnetic-soft">
           <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/>
           </svg>
-          <strong>Drop MIDI or Guitar Pro</strong>
-          <span>.mid · .gp · .gp3-5 · .gpx — or click to browse</span>
+          <strong>Drop a Guitar Pro or MIDI file</strong>
+          <span>.gp · .gp3–.gp5 · .gpx · .mid — or click to browse</span>
           <input type="file" id="file-input" accept=".mid,.midi,.gp,.gp3,.gp4,.gp5,.gpx,audio/midi" hidden>
         </div>
         <div id="file-badge" class="file-badge" hidden>
@@ -85,12 +85,12 @@
       </section>
 
       <section class="panel-section hud-item">
-        <h2 class="section-label">FIND TABS <em>SONGSTERR</em></h2>
+        <h2 class="section-label" title="Search the Songsterr tab library and load the drum track with one click">FIND A SONG <em>SONGSTERR</em></h2>
         <div class="input-row">
           <input type="text" id="tab-search" placeholder="Search song or artist… (Ctrl F)" autocomplete="off" spellcheck="false">
           <button id="tab-search-open" class="btn-mini" title="Open the tab finder · Ctrl F">FIND</button>
         </div>
-        <h2 class="section-label sub-label">IMPORT FROM URL</h2>
+        <h2 class="section-label sub-label" title="A direct link to a .gp or .mid file on the web">IMPORT FROM A LINK</h2>
         <div class="input-row">
           <input type="text" id="tab-url" placeholder="https://… direct link to .gp / .mid" autocomplete="off" spellcheck="false">
           <button id="tab-url-load" class="btn-mini">LOAD</button>
@@ -99,17 +99,17 @@
       </section>
 
       <section class="panel-section hud-item">
-        <h2 class="section-label">TRACK INFO</h2>
+        <h2 class="section-label" title="What the video says about the song — the title, the artist and your own name">TITLES</h2>
         <div class="field">
-          <label for="song-input">SONG</label>
+          <label for="song-input">SONG TITLE</label>
           <input type="text" id="song-input" placeholder="Song title" maxlength="240" autocomplete="off" spellcheck="false">
         </div>
         <div class="field">
-          <label for="artist-input">ARTIST</label>
+          <label for="artist-input">ARTIST / BAND</label>
           <input type="text" id="artist-input" placeholder="Band / artist" maxlength="240" autocomplete="off" spellcheck="false">
         </div>
         <div class="field" title="Your channel or brand name — shown as the small line at the top of the video, on the subscribe card and on the blueprint sheet. Leave empty for none.">
-          <label for="brand-input">CHANNEL / BRAND</label>
+          <label for="brand-input">YOUR CHANNEL / BRAND</label>
           <input type="text" id="brand-input" placeholder="optional · e.g. your channel name" maxlength="60" autocomplete="off" spellcheck="false">
         </div>
       </section>
@@ -117,7 +117,7 @@
       <footer class="panel-foot hud-item">
         <p id="license-status" class="license-status">—</p>
         <div class="license-links"><a class="promo-link" id="license-manage" href="#" target="_blank" rel="noopener">MANAGE PLAN ↗</a><a class="promo-link license-signout" id="license-signout" href="#">SIGN OUT</a></div>
-        <p>H.264 + AAC via WebCodecs · the video is rendered in this browser</p>
+        <p>MP4 (H.264 + AAC) rendered in this browser · Chrome or Edge</p>
       </footer>
     </aside>
 
@@ -128,36 +128,36 @@
         <button id="tab-sound" role="tab" aria-controls="studio-sound">SOUND</button>
         <button id="tab-export" role="tab" aria-controls="studio-export">EXPORT</button>
       </div>
-      <section class="panel-section hud-item" id="preset-section" title="Named snapshots of the whole setup: look, sound, mixer, mastering, hybrid phase. Song-bound values (title, BPM, loop) stay out.">
+      <section class="panel-section hud-item" id="preset-section" title="Save a look-and-sound setup you like under a name and switch between them. The song, its tempo and the loop are not part of a preset.">
         <h2 class="section-label">PRESETS</h2>
         <div class="row">
-          <div class="field"><div class="select-wrap"><select id="preset-select"><option value="">— no preset —</option></select></div></div>
-          <button id="preset-save" class="btn-mini" title="Save the current setup as a new preset">SAVE</button>
+          <div class="field"><div class="select-wrap"><select id="preset-select"><option value="">— choose a preset —</option></select></div></div>
+          <button id="preset-save" class="btn-mini" title="Save the current look and sound as a new preset">SAVE</button>
         </div>
         <div class="row preset-actions">
           <button id="preset-update" class="btn-mini" title="Overwrite the active preset with the current setup" disabled>UPDATE</button>
           <button id="preset-delete" class="btn-mini" title="Delete the active preset" disabled>DELETE</button>
           <button id="preset-export" class="btn-mini" title="Download every preset as a JSON file">EXPORT</button>
           <label class="btn-mini preset-import" title="Import presets from a JSON file">IMPORT<input type="file" id="preset-import" accept="application/json,.json" hidden></label>
-          <button id="preset-reset" class="btn-mini" title="Back to the factory defaults">RESET</button>
+          <button id="preset-reset" class="btn-mini" title="Back to the default look and sound">RESET</button>
         </div>
         <span class="hint" id="preset-status"></span>
       </section>
       <section class="panel-section hud-item">
         <h2 class="section-label">LOOK</h2>
-        <div class="field"><label for="readability-select">VIDEO READABILITY</label>
+        <div class="field" title="How much detail the video shows. Clear keeps only what stays readable on a phone screen (Orbits XL and Blueprint styles)"><label for="readability-select">DETAIL LEVEL</label>
           <div class="select-wrap"><select id="readability-select">
-            <option value="original">Original · all visual details</option>
-            <option value="clear">Clear · Orbits XL / Blueprint</option>
+            <option value="original">Full · every detail</option>
+            <option value="clear">Clear · easy to read on a phone</option>
           </select></div>
         </div>
-        <button id="phone-preview" class="btn-mini">PHONE PREVIEW</button>
+        <button id="phone-preview" class="btn-mini" title="See the current frame at phone size to check what stays readable">PHONE PREVIEW</button>
         <div class="field">
-          <label for="style-select">STYLE</label>
+          <label for="style-select" title="The visual style of the whole video">STYLE</label>
           <div class="select-wrap">
             <select id="style-select">
               <optgroup label="Signature">
-                <option value="blueprint" selected>Blueprint — engineering sheet</option>
+                <option value="blueprint" selected>Blueprint — technical drawing</option>
               </optgroup>
               <optgroup label="Cinematic 3D">
                 <option value="nebula">Nebula</option>
@@ -167,7 +167,7 @@
               </optgroup>
               <optgroup label="Classic">
                 <option value="orbits">Orbits</option>
-                <option value="orbitsx">Orbits XL — every tab detail</option>
+                <option value="orbitsx">Orbits XL — every detail of the tab</option>
                 <option value="polygons">Polygons</option>
                 <option value="grid">Pulse grid</option>
                 <option value="seq">Step ring</option>
@@ -183,18 +183,18 @@
           </div>
         </div>
         <div class="field">
-          <label for="theme-select">THEME</label>
+          <label for="theme-select" title="Colours of the video">COLOURS</label>
           <div class="select-wrap"><select id="theme-select"></select></div>
         </div>
-        <div class="field" title="How one bar gives way to the next on the rings (Orbits, Orbits XL, Step Ring, Starburst, Grid). WIPE: the next bar's notes appear behind the hand a moment after each note is struck — a radar sweep. BARLINE: the whole bar swaps at 12 o'clock">
+        <div class="field" title="How the next bar appears on the ring styles (Orbits, Orbits XL, Step ring, Starburst, Pulse grid). Reveal: the next bar's notes appear behind the hand right after each note is played, like a radar sweep. Swap: the whole bar changes when the hand reaches the top">
           <label for="barswap-select">NEXT BAR</label>
-          <div class="select-wrap"><select id="barswap-select"><option value="wipe" selected>WIPE BEHIND THE HAND</option><option value="barline">SWAP AT THE BARLINE</option></select></div>
+          <div class="select-wrap"><select id="barswap-select"><option value="wipe" selected>Reveal behind the hand</option><option value="barline">Swap at the bar line</option></select></div>
         </div>
         <div class="row">
-          <label class="switch"><input type="checkbox" id="captions-toggle" checked><span class="sw"></span><span class="sw-label">CAPTIONS</span></label>
-          <label class="switch"><input type="checkbox" id="guides-toggle"><span class="sw"></span><span class="sw-label">UI GUIDES</span></label>
+          <label class="switch" title="Short lines under the title about the groove — meter, section, double kick — that change with the music"><input type="checkbox" id="captions-toggle" checked><span class="sw"></span><span class="sw-label">CAPTIONS</span></label>
+          <label class="switch" title="Preview only: shows where Instagram and YouTube put their own buttons over the video, so you know which areas to keep clear"><input type="checkbox" id="guides-toggle"><span class="sw"></span><span class="sw-label">SAFE ZONES</span></label>
         </div>
-        <div class="row cta-row" title="Animated follow / subscribe card in the bottom corner, in the preview and in every export. Name empty = the CHANNEL / BRAND above. AUTO platform: YouTube for 16:9 and Shorts, Instagram for Stories, Reels and 1:1">
+        <div class="row cta-row" title="An animated follow / subscribe card pops up in the bottom corner of the video. Name empty = your channel / brand from TITLES. AUTO platform: YouTube for 16:9 and Shorts, Instagram for Stories and Reels">
           <label class="switch"><input type="checkbox" id="cta-toggle" checked><span class="sw"></span><span class="sw-label">FOLLOW / SUBSCRIBE CARD</span></label>
           <div class="field cta-text"><label for="cta-name">NAME</label><input type="text" id="cta-name" placeholder="= channel / brand" maxlength="40" autocomplete="off" spellcheck="false"></div>
           <div class="field cta-text"><label for="cta-handle">HANDLE</label><input type="text" id="cta-handle" placeholder="@yourchannel" maxlength="40" autocomplete="off" spellcheck="false"></div>
@@ -202,46 +202,46 @@
             <option value="auto" selected>AUTO (by format)</option><option value="youtube">YouTube</option><option value="instagram">Instagram</option><option value="tiktok">TikTok</option><option value="facebook">Facebook</option><option value="twitch">Twitch</option><option value="x">X</option>
           </select></div></div>
           <div class="field cta-text" title="Button text · empty = SUBSCRIBE (YouTube) or FOLLOW (other platforms)"><label for="cta-label">BUTTON</label><input type="text" id="cta-label" placeholder="auto" maxlength="18" autocomplete="off" spellcheck="false"></div>
-          <div class="field field-mini"><label for="cta-at">FIRST AT s</label><input type="number" id="cta-at" min="1" max="3600" step="1" value="15"></div>
-          <div class="field field-mini" title="Repeat interval in seconds · 0 = show it once"><label for="cta-every">EVERY s</label><input type="number" id="cta-every" min="0" max="3600" step="1" value="25"></div>
+          <div class="field field-mini" title="Seconds into the video when the card first appears"><label for="cta-at">FIRST AT s</label><input type="number" id="cta-at" min="1" max="3600" step="1" value="15"></div>
+          <div class="field field-mini" title="Show it again every … seconds · 0 = only once"><label for="cta-every">EVERY s</label><input type="number" id="cta-every" min="0" max="3600" step="1" value="25"></div>
         </div>
       </section>
 
       <section class="panel-section hud-item">
-        <h2 class="section-label">SOUND</h2>
+        <h2 class="section-label" title="What you hear in the preview and in the video: the drum kit, the tempo and the backing band">SOUND</h2>
         <div class="row">
-          <div class="field">
-            <label for="bpm-input">BPM</label>
+          <div class="field" title="Tempo. Filled in from the tab; change it to speed the song up or slow it down">
+            <label for="bpm-input">TEMPO (BPM)</label>
             <input type="number" id="bpm-input" min="30" max="300" step="1">
           </div>
           <div class="field">
-            <label for="engine-select">ENGINE</label>
+            <label for="engine-select" title="The drum sounds. Kit 1 = natural studio drums, Kit 2 = modern, punchy metal kit, Kit 3 = heavily produced kit. Layered = two or three kits blended for a bigger sound">DRUM KIT</label>
             <div class="select-wrap">
               <select id="engine-select">
-                <option value="ggd">KIT 2</option>
-                <option value="odeholm">KIT 3</option>
-                <option value="hybrid" selected>LAYERED — KIT 1 + KIT 2</option>
-                <option value="hybrid3">LAYERED — KIT 1 + KIT 2 + KIT 3</option>
-                <option value="samples">KIT 1</option>
-                <option value="synth">Synth</option>
+                <option value="samples">Kit 1 · natural</option>
+                <option value="ggd">Kit 2 · modern</option>
+                <option value="odeholm">Kit 3 · produced</option>
+                <option value="hybrid" selected>Kit 1 + 2 layered</option>
+                <option value="hybrid3">Kit 1 + 2 + 3 layered</option>
+                <option value="synth">Synth drums (no samples)</option>
               </select>
             </div>
           </div>
         </div>
         <div class="row">
-          <label class="switch"><input type="checkbox" id="sound-toggle" checked><span class="sw"></span><span class="sw-label">MONITOR</span></label>
-          <label class="switch"><input type="checkbox" id="band-on" checked><span class="sw"></span><span class="sw-label">BAND</span></label>
-          <label class="switch" title="Guitar Pro choke noteheads: the cymbal rings the written note value, then the hand grabs it. Off = play them as plain cymbals"><input type="checkbox" id="chokes-on"><span class="sw"></span><span class="sw-label">CHOKES</span></label>
-          <label class="switch" title="Click in the drum rests only (intro, breakdowns, long breaks): bar downbeat strong, group accents in odd and compound meters (5/4 = 3+2, 7/8 = 2+2+3, 6/8 = 3+3), silent while the drums play. Level: the CLICK fader in the mixer"><input type="checkbox" id="click-on"><span class="sw"></span><span class="sw-label">METRONOME</span></label>
+          <label class="switch" title="Hear the preview while it plays (the exported video always has sound)"><input type="checkbox" id="sound-toggle" checked><span class="sw"></span><span class="sw-label">PREVIEW SOUND</span></label>
+          <label class="switch" title="The bass and guitar tracks of the tab play along with the drums"><input type="checkbox" id="band-on" checked><span class="sw"></span><span class="sw-label">BACKING BAND</span></label>
+          <label class="switch" title="Cymbal chokes written in the tab: the cymbal rings for the written length, then gets grabbed. Off = plain cymbal hits"><input type="checkbox" id="chokes-on"><span class="sw"></span><span class="sw-label">CHOKES</span></label>
+          <label class="switch" title="A click plays only where the drums rest (intro, breakdowns, long breaks), with the right accents for odd meters, so the video is never silent. Level: the CLICK fader in the mixer"><input type="checkbox" id="click-on"><span class="sw"></span><span class="sw-label">METRONOME</span></label>
         </div>
         <div class="row">
           <div class="field">
-            <label for="bass-select">BASS</label>
+            <label for="bass-select" title="The bass sound for the backing band. Bass 1 = tight and modern, Bass 2 = round and warm, Bass 3 = deep and heavy">BASS SOUND</label>
             <div class="select-wrap">
               <select id="bass-select">
-                <option value="bass1" selected>BASS 1</option>
-                <option value="bass2">BASS 2</option>
-                <option value="bass3">BASS 3</option>
+                <option value="bass1" selected>Bass 1 · tight</option>
+                <option value="bass2">Bass 2 · warm</option>
+                <option value="bass3">Bass 3 · heavy</option>
               </select>
             </div>
           </div>
@@ -260,19 +260,19 @@
         <span class="hint" id="bass-status">Loading bass…</span>
         <span class="hint" id="sf-status" hidden></span>
         <div class="row">
-          <label class="switch" title="The tab's guitar tracks (sampled GUITAR 1)"><input type="checkbox" id="guitar-on" checked><span class="sw"></span><span class="sw-label">GUITARS</span></label>
+          <label class="switch" title="The guitar tracks of the tab play along (rhythm guitar sound)"><input type="checkbox" id="guitar-on" checked><span class="sw"></span><span class="sw-label">GUITARS</span></label>
           <label class="switch" hidden><input type="checkbox" id="other-on"><span class="sw"></span><span class="sw-label">OTHER</span></label>
           <span class="hint" id="guitar-status"></span>
         </div>
-        <div class="slider-row">
-          <label for="band-level">BAND LVL</label>
+        <div class="slider-row" title="How loud the backing band is next to the drums">
+          <label for="band-level">BAND LEVEL</label>
           <input type="range" id="band-level" min="0" max="100" step="1" value="39">
           <span id="band-level-v">39%</span>
         </div>
       </section>
 
       <section class="panel-section hud-item" id="mixer-section">
-        <h2 class="section-label">MIXER</h2>
+        <h2 class="section-label" title="Balance of the instruments in the preview and in the video">MIXER</h2>
         <div class="slider-row">
           <label for="mix-kick">KICK</label>
           <input type="range" id="mix-kick" min="-30" max="12" step="0.5" value="0" data-default="0">
@@ -293,12 +293,12 @@
           <input type="range" id="mix-cymbals" min="-30" max="12" step="0.5" value="0" data-default="0">
           <span id="mix-cymbals-v">0.0 dB</span>
         </div>
-        <div class="slider-row" title="Backing bass (sampled set or synth)">
+        <div class="slider-row" title="The backing bass">
           <label for="mix-bass">BASS</label>
           <input type="range" id="mix-bass" min="-30" max="12" step="0.5" value="0" data-default="0">
           <span id="mix-bass-v">0.0 dB</span>
         </div>
-        <div class="slider-row" title="Guitar tracks (sampled)">
+        <div class="slider-row" title="The backing guitars">
           <label for="mix-guitar">GUITAR</label>
           <input type="range" id="mix-guitar" min="-30" max="12" step="0.5" value="0" data-default="0">
           <span id="mix-guitar-v">0.0 dB</span>
@@ -313,87 +313,87 @@
           <input type="range" id="mix-click" min="-30" max="12" step="0.5" value="0" data-default="0">
           <span id="mix-click-v">0.0 dB</span>
         </div>
-        <div class="slider-row" title="Shift the whole group's velocity (MIDI units) so it hits the right sample layer; the tab's dynamics stay intact">
-          <label for="mix-kick-vel">KICK VEL</label>
+        <div class="slider-row" title="How hard the kick is played: softer or harder hits, the tab's own dynamics stay">
+          <label for="mix-kick-vel">KICK HIT</label>
           <input type="range" id="mix-kick-vel" min="-40" max="40" step="1" value="0" data-default="0">
           <span id="mix-kick-vel-v">0</span>
         </div>
-        <div class="slider-row" title="Shift the whole group's velocity (MIDI units) so it hits the right sample layer; the tab's dynamics stay intact">
-          <label for="mix-snare-vel">SNARE VEL</label>
+        <div class="slider-row" title="How hard the snare is played: softer or harder hits, the tab's own dynamics stay">
+          <label for="mix-snare-vel">SNARE HIT</label>
           <input type="range" id="mix-snare-vel" min="-40" max="40" step="1" value="0" data-default="0">
           <span id="mix-snare-vel-v">0</span>
         </div>
-        <div class="slider-row" title="Shift the whole group's velocity (MIDI units) so it hits the right sample layer; the tab's dynamics stay intact">
-          <label for="mix-toms-vel">TOMS VEL</label>
+        <div class="slider-row" title="How hard the toms are played: softer or harder hits, the tab's own dynamics stay">
+          <label for="mix-toms-vel">TOMS HIT</label>
           <input type="range" id="mix-toms-vel" min="-40" max="40" step="1" value="0" data-default="0">
           <span id="mix-toms-vel-v">0</span>
         </div>
-        <div class="slider-row" title="How much the hands breathe: hi-hat and ride by metric position (beats lean in, off-beats and sixteenths sit lower, a little push/pull), and snare / tom runs — blasts, rolls, fast fills — sit a step under the accent level with alternating hands, the beats leading. Written accents and ghosts are untouched">
-          <label for="mix-hatdyn">HANDS DYN</label>
+        <div class="slider-row" title="Human feel: hi-hat, ride and fast snare / tom runs get the natural give-and-take of real hands — beats lean in, off-beats sit back. 0 % = every hit exactly as written">
+          <label for="mix-hatdyn">HUMAN FEEL</label>
           <input type="range" id="mix-hatdyn" min="0" max="100" step="1" value="100" data-default="100">
           <span id="mix-hatdyn-v">100%</span>
         </div>
-        <span class="hint">Double-click a fader to reset it.</span>
+        <span class="hint">Double-click a fader to reset it. Every setting here is heard in the preview and in the video.</span>
       </section>
 
-      <section class="panel-section hud-item" id="eq-section" title="Graphic EQ per mixer channel: 8 bands, ±12 dB, in front of the channel fader. Drag a band, double-click it to flatten, FLAT resets the channel. Same curve live and in the export.">
+      <section class="panel-section hud-item" id="eq-section" title="Tone of each drum group: 8 bands, ±12 dB. Drag a band up or down, double-click it to flatten it, FLAT resets the whole channel. Same sound in the preview and in the video.">
         <h2 class="section-label">EQ</h2>
         <div id="eq-blocks"></div>
-        <span class="hint">Drag the bands · double-click a band to flatten it · the curve is the real filter response.</span>
+        <span class="hint">Drag the bands · double-click a band to flatten it.</span>
       </section>
 
       <section class="panel-section hud-item" id="hybrid-section" hidden>
-        <h2 class="section-label">HYBRID PHASE</h2>
+        <h2 class="section-label" title="Only for the layered kits: makes sure the blended kits hit at exactly the same moment">LAYER ALIGNMENT</h2>
         <div class="row">
-          <label class="switch" title="Apply the measured KIT 1 ↔ KIT 2 alignment (delay + polarity) per instrument"><input type="checkbox" id="hyb-auto" checked><span class="sw"></span><span class="sw-label">AUTO ALIGN</span></label>
-          <button id="hyb-measure" class="btn-mini" title="Re-measure the residual attack alignment of the layered libraries (KIT 1 ↔ KIT 2, KIT 3 ↔ KIT 2)">MEASURE</button>
-          <button id="hyb-verify" class="btn-mini" title="Self-test: renders every layer alone for kick, snare, toms, hats and cymbals and reports how far apart their attacks land">CHECK</button>
+          <label class="switch" title="Line the layered kits up automatically (recommended)"><input type="checkbox" id="hyb-auto" checked><span class="sw"></span><span class="sw-label">AUTO ALIGN</span></label>
+          <button id="hyb-measure" class="btn-mini" title="Measure the alignment again">MEASURE</button>
+          <button id="hyb-verify" class="btn-mini" title="Test: renders each kit alone and reports how far apart their hits land">CHECK</button>
         </div>
-        <span class="hint">Every take starts from its own detected transient, so the attacks of all layers land on the same sample; MEASURE adds the residual (attack shape) per instrument, the trims below sit on top.</span>
-        <div class="slider-row phase-row" title="Extra delay trim for this group: + delays the KIT 1 layer, − delays the KIT 2 layer. Ø flips the KIT 1 polarity">
-          <label for="hyb-kick">KICK</label>
+        <span class="hint">The kits are lined up automatically. The trims below are for fine-tuning by ear: + delays the first kit, − delays the second, Ø flips the polarity.</span>
+        <div class="slider-row phase-row" title="Fine trim: + delays Kit 1, − delays Kit 2, Ø flips Kit 1">
+          <label for="hyb-kick">KIT 1 KICK</label>
           <input type="range" id="hyb-kick" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-kick-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-kick-flip" checked><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
         <div class="slider-row phase-row">
-          <label for="hyb-snare">SNARE</label>
+          <label for="hyb-snare">KIT 1 SNARE</label>
           <input type="range" id="hyb-snare" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-snare-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-snare-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
         <div class="slider-row phase-row">
-          <label for="hyb-toms">TOMS</label>
+          <label for="hyb-toms">KIT 1 TOMS</label>
           <input type="range" id="hyb-toms" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-toms-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-toms-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
-        <div class="slider-row phase-row" title="HYBRID 3, KIT 3 layer against KIT 2: + delays the KIT 3 layer, − advances it. Ø flips the KIT 3 polarity">
-          <label for="hyb-od-kick">OD KICK</label>
+        <div class="slider-row phase-row" title="Fine trim of Kit 3 against Kit 2: + delays Kit 3, − advances it, Ø flips Kit 3">
+          <label for="hyb-od-kick">KIT 3 KICK</label>
           <input type="range" id="hyb-od-kick" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-od-kick-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-od-kick-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
-        <div class="slider-row phase-row" title="HYBRID 3, KIT 3 layer against KIT 2: + delays the KIT 3 layer, − advances it. Ø flips the KIT 3 polarity">
-          <label for="hyb-od-snare">OD SNARE</label>
+        <div class="slider-row phase-row" title="Fine trim of Kit 3 against Kit 2: + delays Kit 3, − advances it, Ø flips Kit 3">
+          <label for="hyb-od-snare">KIT 3 SNARE</label>
           <input type="range" id="hyb-od-snare" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-od-snare-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-od-snare-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
-        <div class="slider-row phase-row" title="HYBRID 3, KIT 3 layer against KIT 2: + delays the KIT 3 layer, − advances it. Ø flips the KIT 3 polarity">
-          <label for="hyb-od-toms">OD TOMS</label>
+        <div class="slider-row phase-row" title="Fine trim of Kit 3 against Kit 2: + delays Kit 3, − advances it, Ø flips Kit 3">
+          <label for="hyb-od-toms">KIT 3 TOMS</label>
           <input type="range" id="hyb-od-toms" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-od-toms-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-od-toms-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
-        <div class="slider-row phase-row" title="HYBRID 3, KIT 3 layer against KIT 2: + delays the KIT 3 layer, − advances it. Ø flips the KIT 3 polarity">
-          <label for="hyb-od-hats">OD HATS</label>
+        <div class="slider-row phase-row" title="Fine trim of Kit 3 against Kit 2: + delays Kit 3, − advances it, Ø flips Kit 3">
+          <label for="hyb-od-hats">KIT 3 HATS</label>
           <input type="range" id="hyb-od-hats" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-od-hats-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-od-hats-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
-        <div class="slider-row phase-row" title="HYBRID 3, KIT 3 layer against KIT 2: + delays the KIT 3 layer, − advances it. Ø flips the KIT 3 polarity">
-          <label for="hyb-od-cymbals">OD CYMBALS</label>
+        <div class="slider-row phase-row" title="Fine trim of Kit 3 against Kit 2: + delays Kit 3, − advances it, Ø flips Kit 3">
+          <label for="hyb-od-cymbals">KIT 3 CYMBALS</label>
           <input type="range" id="hyb-od-cymbals" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-od-cymbals-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-od-cymbals-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
@@ -404,10 +404,10 @@
       </section>
 
       <section class="panel-section hud-item">
-        <h2 class="section-label">MASTER</h2>
+        <h2 class="section-label" title="Final polish of the whole mix: a compressor glues it together, a limiter keeps it from clipping">MASTER</h2>
         <div class="row">
-          <label class="switch"><input type="checkbox" id="comp-on" checked><span class="sw"></span><span class="sw-label">COMP</span></label>
-          <label class="switch"><input type="checkbox" id="lim-on" checked><span class="sw"></span><span class="sw-label">LIMITER</span></label>
+          <label class="switch" title="Compressor on the whole mix"><input type="checkbox" id="comp-on" checked><span class="sw"></span><span class="sw-label">COMPRESSOR</span></label>
+          <label class="switch" title="Limiter: nothing louder than the ceiling"><input type="checkbox" id="lim-on" checked><span class="sw"></span><span class="sw-label">LIMITER</span></label>
         </div>
         <div class="slider-row">
           <label for="comp-th">THRESHOLD</label>
@@ -419,8 +419,8 @@
           <input type="range" id="comp-ratio" min="1" max="10" step="0.5" value="2">
           <span id="comp-ratio-v">4:1</span>
         </div>
-        <div class="slider-row">
-          <label for="comp-hpf">SC HI-PASS</label>
+        <div class="slider-row" title="The compressor ignores the lows below this frequency, so the kick does not make the mix pump">
+          <label for="comp-hpf">BASS CUT</label>
           <input type="range" id="comp-hpf" min="20" max="300" step="5" value="120">
           <span id="comp-hpf-v">120 Hz</span>
         </div>
@@ -432,24 +432,24 @@
       </section>
 
       <section class="panel-section hud-item">
-        <h2 class="section-label">EXPORT <em>MP4</em></h2>
-        <div class="field">
+        <h2 class="section-label" title="The video file: format, length and quality. Rendered in this browser, saved to Downloads or a folder you pick">EXPORT <em>MP4</em></h2>
+        <div class="field" title="Where the video will be posted — sets the size and keeps the platform's buttons out of the way">
           <label for="format-select">FORMAT</label>
           <div class="select-wrap">
             <select id="format-select">
-              <option value="vertical">9:16 · IG Stories</option>
-              <option value="reel">9:16 · IG Reels · 4:5 safe</option>
-              <option value="shorts">9:16 · YT Shorts</option>
+              <option value="vertical">9:16 · Instagram Stories</option>
+              <option value="reel">9:16 · Instagram Reels (feed-safe)</option>
+              <option value="shorts">9:16 · YouTube Shorts / TikTok</option>
               <option value="horizontal" selected>16:9 · YouTube</option>
             </select>
           </div>
         </div>
         <div class="row">
-          <div class="field">
-            <label for="loops-select">LOOPS</label>
+          <div class="field" title="How many times the selected loop repeats in the video. For the whole song set the loop to Whole song in the timeline (LEN)">
+            <label for="loops-select">LENGTH</label>
             <div class="select-wrap">
               <select id="loops-select">
-                <option value="auto" selected>Auto (~12 s)</option>
+                <option value="auto" selected>Auto (about 12 s)</option>
                 <option value="1">1 loop</option>
                 <option value="2">2 loops</option>
                 <option value="4">4 loops</option>
@@ -457,7 +457,7 @@
               </select>
             </div>
           </div>
-          <div class="field">
+          <div class="field" title="Frames per second: 60 is smoother, 30 renders faster">
             <label for="fps-select">FPS</label>
             <div class="select-wrap">
               <select id="fps-select">
@@ -468,7 +468,7 @@
           </div>
         </div>
         <div class="row export-dir-row" id="export-dir-row" title="Where the MP4 is written. Pick a folder once — the browser asks for write access with a click, then every export lands there instead of Downloads">
-          <button id="export-dir-btn" class="btn-mini">FOLDER…</button>
+          <button id="export-dir-btn" class="btn-mini">SAVE TO…</button>
           <span class="hint export-dir-name">→ <span id="export-dir-name">Downloads</span></span>
           <button id="export-dir-clear" class="btn-mini" title="Back to the browser's Downloads" hidden>×</button>
         </div>
@@ -504,10 +504,10 @@
           <span class="tl-readout dim" id="tl-bar">—</span>
         </div>
         <div id="section-controls" class="section-controls" hidden>
-          <span class="section-label">LOOP</span>
+          <span class="section-label" title="The bars that play and go into the video">LOOP</span>
           <label class="bar-field"><span>FROM</span><input type="number" id="from-bar" min="1" step="1"></label>
           <label class="bar-field"><span>TO</span><input type="number" id="to-bar" min="1" step="1"></label>
-          <select id="tl-len" class="tl-select" title="Set loop length from FROM">
+          <select id="tl-len" class="tl-select" title="Loop length, counted from FROM · Whole song = the entire tab">
             <option value="">LEN</option>
             <option value="1">1 bar</option>
             <option value="2">2 bars</option>
@@ -546,7 +546,7 @@
       </div>
       <div class="tf-filters">
         <label class="switch mini"><input type="checkbox" id="tf-f-drums" checked><span class="sw"></span><span class="sw-label">DRUM TRACK</span></label>
-        <label class="tf-diff"><span>DRUM LVL</span><input type="range" id="tf-f-diff" min="1" max="7" step="1" value="1"><b id="tf-f-diff-v">any</b></label>
+        <label class="tf-diff" title="Drum difficulty as rated on Songsterr"><span>DIFFICULTY</span><input type="range" id="tf-f-diff" min="1" max="7" step="1" value="1"><b id="tf-f-diff-v">any</b></label>
         <label class="switch mini"><input type="checkbox" id="tf-f-bass"><span class="sw"></span><span class="sw-label">HAS BASS</span></label>
         <label class="switch mini"><input type="checkbox" id="tf-f-guitar"><span class="sw"></span><span class="sw-label">HAS GUITAR</span></label>
         <label class="tf-genre" title="Browse a Songsterr genre tag (most popular first); the search box then narrows within it"><span>GENRE</span>
