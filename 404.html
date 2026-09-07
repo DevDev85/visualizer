@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="build" content="2026-09-07 15:19:17 UTC">
+  <meta name="build" content="2026-09-07 15:22:13 UTC">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Drum Visualizer</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -10,8 +10,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <meta name="theme-color" content="#0b0b10">
-  <script type="module" crossorigin src="/assets/index-WnbAQ0jx.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-3-nWasu_.css">
+  <script type="module" crossorigin src="/assets/index-Dw6xyCgb.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DBrEUjBh.css">
 </head>
 <body>
   <div id="app" class="app is-booting">
@@ -627,7 +627,7 @@
         <p class="lg-kicker">Drum Visualizer</p>
         <h2>Sign in</h2>
         <p class="license-lead">Use the e-mail from your checkout and the order number from the confirmation e-mail. A pass is valid for 30 days from the purchase.</p>
-        <div class="license-modes" role="tablist">
+        <div class="license-modes" hidden>
           <button type="button" class="btn-mini" data-license-mode="order">ORDER</button>
           <button type="button" class="btn-mini" data-license-mode="key">LICENCE KEY</button>
         </div>
@@ -638,6 +638,7 @@
         <div id="license-key-fields" hidden>
           <div class="field"><label for="license-key">LICENCE KEY</label><input type="text" id="license-key" placeholder="DV-XXXX-XXXX-XXXX" autocomplete="off" spellcheck="false"></div>
         </div>
+        <p class="lg-switch"><a href="#" id="license-mode-key" data-license-mode="key">Have a licence key?</a><a href="#" id="license-mode-order" data-license-mode="order" hidden>Sign in with an order instead</a></p>
         <p id="license-error" class="license-error" role="alert"></p>
         <div class="license-actions">
           <button type="submit" id="license-submit" class="btn-primary">SIGN IN</button>
