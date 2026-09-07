@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="build" content="2026-09-07 14:12:38 UTC">
+  <meta name="build" content="2026-09-07 14:20:16 UTC">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Drum Visualizer</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -10,8 +10,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <meta name="theme-color" content="#0b0b10">
-  <script type="module" crossorigin src="/assets/index-BzzNDJHc.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BbvY3Lmg.css">
+  <script type="module" crossorigin src="/assets/index-CxdPyQiN.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CNpP51p8.css">
 </head>
 <body>
   <div id="app" class="app is-booting">
@@ -144,7 +144,7 @@
         <span class="hint" id="preset-status"></span>
       </section>
       <section class="panel-section hud-item">
-        <h2 class="section-label">LOOK</h2>
+        <h2 class="section-label" title="How the video looks: style, colours, captions">APPEARANCE</h2>
         <div class="field" title="How much detail the video shows. Clear keeps only what stays readable on a phone screen (Orbits XL and Blueprint styles)"><label for="readability-select">DETAIL LEVEL</label>
           <div class="select-wrap"><select id="readability-select">
             <option value="original">Full · every detail</option>
@@ -190,7 +190,7 @@
           <label for="barswap-select">NEXT BAR</label>
           <div class="select-wrap"><select id="barswap-select"><option value="wipe" selected>Reveal behind the hand</option><option value="barline">Swap at the bar line</option></select></div>
         </div>
-        <div class="row">
+        <div class="row switches">
           <label class="switch" title="Short lines under the title about the groove — meter, section, double kick — that change with the music"><input type="checkbox" id="captions-toggle" checked><span class="sw"></span><span class="sw-label">CAPTIONS</span></label>
           <label class="switch" title="Preview only: shows where Instagram and YouTube put their own buttons over the video, so you know which areas to keep clear"><input type="checkbox" id="guides-toggle"><span class="sw"></span><span class="sw-label">SAFE ZONES</span></label>
         </div>
@@ -209,32 +209,24 @@
 
       <section class="panel-section hud-item">
         <h2 class="section-label" title="What you hear in the preview and in the video: the drum kit, the tempo and the backing band">SOUND</h2>
+        <div class="field">
+          <label for="engine-select" title="The drum sounds. Kit 1 = natural studio drums, Kit 2 = modern, punchy metal kit, Kit 3 = heavily produced kit. Layered = two or three kits blended for a bigger sound">DRUM KIT</label>
+          <div class="select-wrap">
+            <select id="engine-select">
+              <option value="samples">Kit 1 · natural</option>
+              <option value="ggd">Kit 2 · modern</option>
+              <option value="odeholm">Kit 3 · produced</option>
+              <option value="hybrid" selected>Kit 1 + 2 layered</option>
+              <option value="hybrid3">Kit 1 + 2 + 3 layered</option>
+              <option value="synth">Synth drums (no samples)</option>
+            </select>
+          </div>
+        </div>
         <div class="row">
           <div class="field" title="Tempo. Filled in from the tab; change it to speed the song up or slow it down">
             <label for="bpm-input">TEMPO (BPM)</label>
             <input type="number" id="bpm-input" min="30" max="300" step="1">
           </div>
-          <div class="field">
-            <label for="engine-select" title="The drum sounds. Kit 1 = natural studio drums, Kit 2 = modern, punchy metal kit, Kit 3 = heavily produced kit. Layered = two or three kits blended for a bigger sound">DRUM KIT</label>
-            <div class="select-wrap">
-              <select id="engine-select">
-                <option value="samples">Kit 1 · natural</option>
-                <option value="ggd">Kit 2 · modern</option>
-                <option value="odeholm">Kit 3 · produced</option>
-                <option value="hybrid" selected>Kit 1 + 2 layered</option>
-                <option value="hybrid3">Kit 1 + 2 + 3 layered</option>
-                <option value="synth">Synth drums (no samples)</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <label class="switch" title="Hear the preview while it plays (the exported video always has sound)"><input type="checkbox" id="sound-toggle" checked><span class="sw"></span><span class="sw-label">PREVIEW SOUND</span></label>
-          <label class="switch" title="The bass and guitar tracks of the tab play along with the drums"><input type="checkbox" id="band-on" checked><span class="sw"></span><span class="sw-label">BACKING BAND</span></label>
-          <label class="switch" title="Cymbal chokes written in the tab: the cymbal rings for the written length, then gets grabbed. Off = plain cymbal hits"><input type="checkbox" id="chokes-on"><span class="sw"></span><span class="sw-label">CHOKES</span></label>
-          <label class="switch" title="A click plays only where the drums rest (intro, breakdowns, long breaks), with the right accents for odd meters, so the video is never silent. Level: the CLICK fader in the mixer"><input type="checkbox" id="click-on"><span class="sw"></span><span class="sw-label">METRONOME</span></label>
-        </div>
-        <div class="row">
           <div class="field">
             <label for="bass-select" title="The bass sound for the backing band. Bass 1 = tight and modern, Bass 2 = round and warm, Bass 3 = deep and heavy">BASS SOUND</label>
             <div class="select-wrap">
@@ -245,25 +237,28 @@
               </select>
             </div>
           </div>
-          <div class="field" hidden>
-            <label for="sf-select">SOUNDBANK</label>
-            <div class="select-wrap">
-              <select id="sf-select">
-                <option value="musescore" selected>MuseScore General (HQ)</option>
-                <option value="sgm">SGM Plus HQ</option>
-                <option value="generaluser">GeneralUser GS 2</option>
-                <option value="arachno">Arachno SoundFont 1.0</option>
-              </select>
-            </div>
+        </div>
+        <div class="field" hidden>
+          <label for="sf-select">SOUNDBANK</label>
+          <div class="select-wrap">
+            <select id="sf-select">
+              <option value="musescore" selected>MuseScore General (HQ)</option>
+              <option value="sgm">SGM Plus HQ</option>
+              <option value="generaluser">GeneralUser GS 2</option>
+              <option value="arachno">Arachno SoundFont 1.0</option>
+            </select>
           </div>
         </div>
-        <span class="hint" id="bass-status">Loading bass…</span>
         <span class="hint" id="sf-status" hidden></span>
-        <div class="row">
+        <div class="row switches">
+          <label class="switch" title="Hear the preview while it plays (the exported video always has sound)"><input type="checkbox" id="sound-toggle" checked><span class="sw"></span><span class="sw-label">PREVIEW SOUND</span></label>
+          <label class="switch" title="The bass and guitar tracks of the tab play along with the drums"><input type="checkbox" id="band-on" checked><span class="sw"></span><span class="sw-label">BACKING BAND</span></label>
           <label class="switch" title="The guitar tracks of the tab play along (rhythm guitar sound)"><input type="checkbox" id="guitar-on" checked><span class="sw"></span><span class="sw-label">GUITARS</span></label>
           <label class="switch" hidden><input type="checkbox" id="other-on"><span class="sw"></span><span class="sw-label">OTHER</span></label>
-          <span class="hint" id="guitar-status"></span>
+          <label class="switch" title="Cymbal chokes written in the tab: the cymbal rings for the written length, then gets grabbed. Off = plain cymbal hits"><input type="checkbox" id="chokes-on"><span class="sw"></span><span class="sw-label">CHOKES</span></label>
+          <label class="switch" title="A click plays only where the drums rest (intro, breakdowns, long breaks), with the right accents for odd meters, so the video is never silent. Level: the CLICK fader in the mixer"><input type="checkbox" id="click-on"><span class="sw"></span><span class="sw-label">METRONOME</span></label>
         </div>
+        <span class="hint status-line"><span id="bass-status">Loading bass…</span><span id="guitar-status"></span></span>
         <div class="slider-row" title="How loud the backing band is next to the drums">
           <label for="band-level">BAND LEVEL</label>
           <input type="range" id="band-level" min="0" max="100" step="1" value="39">
@@ -344,56 +339,58 @@
 
       <section class="panel-section hud-item" id="hybrid-section" hidden>
         <h2 class="section-label" title="Only for the layered kits: makes sure the blended kits hit at exactly the same moment">LAYER ALIGNMENT</h2>
-        <div class="row">
+        <div class="row switches">
           <label class="switch" title="Line the layered kits up automatically (recommended)"><input type="checkbox" id="hyb-auto" checked><span class="sw"></span><span class="sw-label">AUTO ALIGN</span></label>
           <button id="hyb-measure" class="btn-mini" title="Measure the alignment again">MEASURE</button>
           <button id="hyb-verify" class="btn-mini" title="Test: renders each kit alone and reports how far apart their hits land">CHECK</button>
         </div>
         <span class="hint">The kits are lined up automatically. The trims below are for fine-tuning by ear: + delays the first kit, − delays the second, Ø flips the polarity.</span>
+        <h3 class="sub-label" title="Fine trim of Kit 1 against Kit 2: + delays Kit 1, − delays Kit 2, Ø flips Kit 1">KIT 1 AGAINST KIT 2</h3>
         <div class="slider-row phase-row" title="Fine trim: + delays Kit 1, − delays Kit 2, Ø flips Kit 1">
-          <label for="hyb-kick">KIT 1 KICK</label>
+          <label for="hyb-kick">KICK</label>
           <input type="range" id="hyb-kick" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-kick-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-kick-flip" checked><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
         <div class="slider-row phase-row">
-          <label for="hyb-snare">KIT 1 SNARE</label>
+          <label for="hyb-snare">SNARE</label>
           <input type="range" id="hyb-snare" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-snare-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-snare-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
         <div class="slider-row phase-row">
-          <label for="hyb-toms">KIT 1 TOMS</label>
+          <label for="hyb-toms">TOMS</label>
           <input type="range" id="hyb-toms" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-toms-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-toms-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
+        <h3 class="sub-label" title="Fine trim of Kit 3 against Kit 2 (Kit 1 + 2 + 3 layered): + delays Kit 3, − advances it, Ø flips Kit 3">KIT 3 AGAINST KIT 2</h3>
         <div class="slider-row phase-row" title="Fine trim of Kit 3 against Kit 2: + delays Kit 3, − advances it, Ø flips Kit 3">
-          <label for="hyb-od-kick">KIT 3 KICK</label>
+          <label for="hyb-od-kick">KICK</label>
           <input type="range" id="hyb-od-kick" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-od-kick-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-od-kick-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
         <div class="slider-row phase-row" title="Fine trim of Kit 3 against Kit 2: + delays Kit 3, − advances it, Ø flips Kit 3">
-          <label for="hyb-od-snare">KIT 3 SNARE</label>
+          <label for="hyb-od-snare">SNARE</label>
           <input type="range" id="hyb-od-snare" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-od-snare-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-od-snare-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
         <div class="slider-row phase-row" title="Fine trim of Kit 3 against Kit 2: + delays Kit 3, − advances it, Ø flips Kit 3">
-          <label for="hyb-od-toms">KIT 3 TOMS</label>
+          <label for="hyb-od-toms">TOMS</label>
           <input type="range" id="hyb-od-toms" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-od-toms-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-od-toms-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
         <div class="slider-row phase-row" title="Fine trim of Kit 3 against Kit 2: + delays Kit 3, − advances it, Ø flips Kit 3">
-          <label for="hyb-od-hats">KIT 3 HATS</label>
+          <label for="hyb-od-hats">HATS</label>
           <input type="range" id="hyb-od-hats" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-od-hats-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-od-hats-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
         <div class="slider-row phase-row" title="Fine trim of Kit 3 against Kit 2: + delays Kit 3, − advances it, Ø flips Kit 3">
-          <label for="hyb-od-cymbals">KIT 3 CYMBALS</label>
+          <label for="hyb-od-cymbals">CYMBALS</label>
           <input type="range" id="hyb-od-cymbals" min="-5" max="5" step="0.1" value="0" data-default="0">
           <span id="hyb-od-cymbals-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-od-cymbals-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
@@ -405,7 +402,7 @@
 
       <section class="panel-section hud-item">
         <h2 class="section-label" title="Final polish of the whole mix: a compressor glues it together, a limiter keeps it from clipping">MASTER</h2>
-        <div class="row">
+        <div class="row switches">
           <label class="switch" title="Compressor on the whole mix"><input type="checkbox" id="comp-on" checked><span class="sw"></span><span class="sw-label">COMPRESSOR</span></label>
           <label class="switch" title="Limiter: nothing louder than the ceiling"><input type="checkbox" id="lim-on" checked><span class="sw"></span><span class="sw-label">LIMITER</span></label>
         </div>
