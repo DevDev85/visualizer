@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="build" content="2026-09-07 18:03:06 UTC">
+  <meta name="build" content="2026-09-07 18:06:02 UTC">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Drum Visualizer</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -10,8 +10,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <meta name="theme-color" content="#0b0b10">
-  <script type="module" crossorigin src="/assets/index-BfilNULO.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DONBS_E1.css">
+  <script type="module" crossorigin src="/assets/index-BGVPNSVa.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-QN28zM5k.css">
 </head>
 <body>
   <div id="app" class="app is-booting">
@@ -625,29 +625,42 @@
       </section>
 
       <form id="license-form" class="license-card" autocomplete="on">
-        <p class="lg-kicker">Drum Visualizer</p>
-        <h2>Sign in</h2>
-        <p class="license-lead">Use the e-mail from your checkout and the order number from the confirmation e-mail. Every credit pack you buy is added to the same account.</p>
-        <div class="license-modes" hidden>
-          <button type="button" class="btn-mini" data-license-mode="order">ORDER</button>
-          <button type="button" class="btn-mini" data-license-mode="key">LICENCE KEY</button>
+        <div class="lc-head">
+          <p class="lg-kicker">Drum Visualizer · customer sign-in</p>
+          <h2>Sign in</h2>
+          <p class="license-lead">Use the e-mail from your checkout and the order number from the confirmation e-mail. No password, no registration — every credit pack you buy joins the same account.</p>
         </div>
-        <div id="license-order-fields">
-          <div class="field"><label for="license-email">E-MAIL</label><input type="email" id="license-email" placeholder="you@example.com" autocomplete="email"></div>
-          <div class="field"><label for="license-order">ORDER NUMBER</label><input type="text" id="license-order" placeholder="#1234" autocomplete="off" spellcheck="false"></div>
+        <div class="lc-form">
+          <div class="license-modes" hidden>
+            <button type="button" class="btn-mini" data-license-mode="order">ORDER</button>
+            <button type="button" class="btn-mini" data-license-mode="key">LICENCE KEY</button>
+          </div>
+          <div id="license-order-fields" class="lc-fields">
+            <div class="field"><label for="license-email">E-MAIL</label><input type="email" id="license-email" placeholder="you@example.com" autocomplete="email"></div>
+            <div class="field"><label for="license-order">ORDER NUMBER</label><input type="text" id="license-order" placeholder="#1234" autocomplete="off" spellcheck="false"></div>
+          </div>
+          <div id="license-key-fields" class="lc-fields" hidden>
+            <div class="field"><label for="license-key">LICENCE KEY</label><input type="text" id="license-key" placeholder="DV-XXXX-XXXX-XXXX" autocomplete="off" spellcheck="false"></div>
+          </div>
+          <p class="lg-switch"><a href="#" id="license-mode-key" data-license-mode="key">Have a licence key?</a><a href="#" id="license-mode-order" data-license-mode="order" hidden>Sign in with an order instead</a></p>
+          <p id="license-error" class="license-error" role="alert"></p>
+          <div class="license-actions">
+            <button type="submit" id="license-submit" class="btn-primary">SIGN IN</button>
+          </div>
         </div>
-        <div id="license-key-fields" hidden>
-          <div class="field"><label for="license-key">LICENCE KEY</label><input type="text" id="license-key" placeholder="DV-XXXX-XXXX-XXXX" autocomplete="off" spellcheck="false"></div>
+        <div class="lc-packs">
+          <div class="lg-or"><span>No credits yet? Pick a pack</span></div>
+          <ul class="lc-pack-list" aria-label="Credit packs">
+            <li><b>STARTER</b><span>10 credits</span><em>€9.90</em><i>€0.99 per video</i></li>
+            <li class="is-best"><b>CREATOR</b><span>50 credits</span><em>€19.90</em><i>€0.40 per video</i><small>Best value</small></li>
+            <li><b>STUDIO</b><span>150 credits</span><em>€39.90</em><i>€0.27 per video</i></li>
+          </ul>
+          <a class="lg-btn lg-btn--outline" id="license-plans-2" href="#" target="_blank" rel="noopener"><span class="lg-btn__main">Get a credit pack ↗</span><span class="lg-btn__sub">1 credit = 1 exported video · credits never expire</span></a>
         </div>
-        <p class="lg-switch"><a href="#" id="license-mode-key" data-license-mode="key">Have a licence key?</a><a href="#" id="license-mode-order" data-license-mode="order" hidden>Sign in with an order instead</a></p>
-        <p id="license-error" class="license-error" role="alert"></p>
-        <div class="license-actions">
-          <button type="submit" id="license-submit" class="btn-primary">SIGN IN</button>
+        <div class="lc-foot">
+          <p class="hint">Sign in on any of your computers. Nothing is uploaded — the video is rendered here, in your browser.</p>
+          <p class="lg-foot">Chrome or Edge on a desktop computer · H.264 + AAC MP4 · 16:9 and 9:16</p>
         </div>
-        <div class="lg-or"><span>No credits yet?</span></div>
-        <a class="lg-btn lg-btn--outline" id="license-plans-2" href="#" target="_blank" rel="noopener"><span class="lg-btn__main">Get a credit pack ↗</span><span class="lg-btn__sub">from €9.90 · 1 credit = 1 exported video</span></a>
-        <p class="hint">Credits never expire and add up with every pack. Nothing is uploaded — the video is rendered here, in your browser.</p>
-        <p class="lg-foot">Chrome or Edge on a desktop computer · H.264 + AAC MP4 · 16:9 and 9:16</p>
       </form>
     </div>
   </div>
