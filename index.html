@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="build" content="2026-09-11 07:54:08 UTC">
+  <meta name="build" content="2026-09-11 07:58:58 UTC">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Drum Visualizer</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <meta name="theme-color" content="#0b0b10">
-  <script type="module" crossorigin src="/assets/index-BYfSdcd9.js"></script>
+  <script type="module" crossorigin src="/assets/index-wZsyhudA.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/index-DAOj24T-.css">
 </head>
 <body>
@@ -219,6 +219,7 @@
                 <option value="garstka">Kit 4 · dynamic</option>
               <option value="hybrid" selected>Kit 1 + 2 layered</option>
               <option value="hybrid3">Kit 1 + 2 + 3 layered</option>
+                <option value="hybrid4">Kit 1 + 2 + 3 + 4 layered</option>
               <option value="synth">Synth drums (no samples)</option>
             </select>
           </div>
@@ -396,8 +397,40 @@
           <span id="hyb-od-cymbals-v">0.0 ms</span>
           <label class="switch mini"><input type="checkbox" id="hyb-od-cymbals-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
         </div>
+        <h3 class="sub-label" title="Fine trim of Kit 4 against Kit 2 (Kit 1 + 2 + 3 + 4 layered): + delays Kit 4, − advances it, Ø flips Kit 4">KIT 4 AGAINST KIT 2</h3>
+        <div class="slider-row phase-row" title="Fine trim of Kit 4 against Kit 2: + delays Kit 4, − advances it, Ø flips Kit 4">
+          <label for="hyb-gk-kick">KICK</label>
+          <input type="range" id="hyb-gk-kick" min="-5" max="5" step="0.1" value="0" data-default="0">
+          <span id="hyb-gk-kick-v">0.0 ms</span>
+          <label class="switch mini"><input type="checkbox" id="hyb-gk-kick-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
+        </div>
+        <div class="slider-row phase-row" title="Fine trim of Kit 4 against Kit 2: + delays Kit 4, − advances it, Ø flips Kit 4">
+          <label for="hyb-gk-snare">SNARE</label>
+          <input type="range" id="hyb-gk-snare" min="-5" max="5" step="0.1" value="0" data-default="0">
+          <span id="hyb-gk-snare-v">0.0 ms</span>
+          <label class="switch mini"><input type="checkbox" id="hyb-gk-snare-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
+        </div>
+        <div class="slider-row phase-row" title="Fine trim of Kit 4 against Kit 2: + delays Kit 4, − advances it, Ø flips Kit 4">
+          <label for="hyb-gk-toms">TOMS</label>
+          <input type="range" id="hyb-gk-toms" min="-5" max="5" step="0.1" value="0" data-default="0">
+          <span id="hyb-gk-toms-v">0.0 ms</span>
+          <label class="switch mini"><input type="checkbox" id="hyb-gk-toms-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
+        </div>
+        <div class="slider-row phase-row" title="Fine trim of Kit 4 against Kit 2: + delays Kit 4, − advances it, Ø flips Kit 4">
+          <label for="hyb-gk-hats">HATS</label>
+          <input type="range" id="hyb-gk-hats" min="-5" max="5" step="0.1" value="0" data-default="0">
+          <span id="hyb-gk-hats-v">0.0 ms</span>
+          <label class="switch mini"><input type="checkbox" id="hyb-gk-hats-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
+        </div>
+        <div class="slider-row phase-row" title="Fine trim of Kit 4 against Kit 2: + delays Kit 4, − advances it, Ø flips Kit 4">
+          <label for="hyb-gk-cymbals">CYMBALS</label>
+          <input type="range" id="hyb-gk-cymbals" min="-5" max="5" step="0.1" value="0" data-default="0">
+          <span id="hyb-gk-cymbals-v">0.0 ms</span>
+          <label class="switch mini"><input type="checkbox" id="hyb-gk-cymbals-flip"><span class="sw"></span><span class="sw-label">Ø</span></label>
+        </div>
         <span class="hint" id="hyb-status">Not measured yet.</span>
         <span class="hint" id="hyb-od-status"></span>
+        <span class="hint" id="hyb-gk-status"></span>
         <span class="hint" id="hyb-verify-status"></span>
       </section>
 
