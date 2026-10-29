@@ -4,23 +4,80 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Drum Visualizer has been discontinued</title>
+<title>Drum Visualizer has been discontinued | Develop Device</title>
+<meta name="description" content="Drum Visualizer was discontinued on 28 October 2026. Watch every drum hit visualized on the Develop Device YouTube channel.">
+<link rel="icon" href="https://developdevice.com/cdn/shop/files/DD-favicon-midi.png?width=96">
 <style>
-  :root { color-scheme: dark; }
-  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0b0d12; color: #e8eaf0;
-         font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; padding: 24px; box-sizing: border-box; }
-  main { max-width: 34rem; }
-  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 .75rem; }
-  p { margin: 0 0 1rem; color: #b9bfcc; }
-  a { color: #a98bff; }
+  /* Develop Device house look: the store's dark canvas, Clash Display headings, Clash Grotesk text, violet gradient
+     (values from the live storefront 29. 10. 2026). Fonts from the store CDN (CORS *). */
+  @font-face { font-family: 'Clash Display'; src: url('https://developdevice.com/cdn/shop/t/228/assets/ClashDisplay-Variable.woff2') format('woff2'); font-weight: 200 700; font-display: swap; }
+  @font-face { font-family: 'Clash Grotesk'; src: url('https://developdevice.com/cdn/shop/t/228/assets/ClashGrotesk-Variable.woff2') format('woff2'); font-weight: 200 700; font-display: swap; }
+  :root {
+    --bg: #050507; --surface: #0d0a18; --line: rgba(169,139,255,.18); --ink: #f2f0fa; --muted: #a7a3b8;
+    --violet-ink: #a98bff; --btn: linear-gradient(90deg, #5534eb, #7c3aed);
+    --title: linear-gradient(135deg, #7b5cff, #c29bff 55%, #6d4dff);
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    min-height: 100vh; display: grid; place-items: center; padding: 48px max(20px, env(safe-area-inset-left, 0px));
+    background:
+      radial-gradient(60rem 36rem at 15% -10%, rgba(85,52,235,.28), transparent 60%),
+      radial-gradient(48rem 30rem at 110% 110%, rgba(124,58,237,.22), transparent 60%),
+      var(--bg);
+    color: var(--ink); font: 400 17px/1.6 'Clash Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  main { width: 100%; max-width: 640px; display: grid; gap: 28px; }
+  .brand { font: 600 13px/1.2 'Clash Display', 'Helvetica Neue', Helvetica, Arial, sans-serif; letter-spacing: .28em; color: var(--muted); }
+  .brand a { color: inherit; text-decoration: none; }
+  h1 {
+    margin: 0; padding: .06em 0 .1em; font: 600 clamp(34px, 7vw, 56px)/1.08 'Clash Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: -.01em; background: var(--title); -webkit-background-clip: text; background-clip: text; color: transparent;
+    text-wrap: balance;
+  }
+  p { margin: 0; color: var(--muted); max-width: 34em; }
+  .card {
+    display: grid; grid-template-columns: 200px 1fr; gap: 20px; align-items: center; padding: 14px;
+    background: linear-gradient(135deg, #1a1433, #0f0c1d); border: 1px solid var(--line); border-radius: 18px;
+    color: inherit; text-decoration: none; transition: border-color .2s, transform .2s;
+  }
+  .card:hover, .card:focus-visible { border-color: rgba(169,139,255,.55); transform: translateY(-2px); outline: none; }
+  .thumb { position: relative; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; background: #000; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .thumb::after {
+    content: ''; position: absolute; inset: 0; margin: auto; width: 46px; height: 46px; border-radius: 50%;
+    background: rgba(5,5,7,.72) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 7l9 5-9 5z' fill='%23ffffff'/%3E%3C/svg%3E") center / 22px no-repeat;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.2);
+  }
+  .card strong { display: block; font: 600 19px/1.3 'Clash Display', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: var(--ink); margin-bottom: 4px; }
+  .card span { font-size: 15px; color: var(--muted); }
+  .actions { display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center; }
+  .btn {
+    display: inline-block; padding: 14px 26px; border-radius: 999px; background: var(--btn); color: #fff; text-decoration: none;
+    font: 600 16px/1.2 'Clash Display', 'Helvetica Neue', Helvetica, Arial, sans-serif; letter-spacing: .02em;
+    box-shadow: 0 10px 30px -10px rgba(124,58,237,.7);
+  }
+  .btn:hover, .btn:focus-visible { filter: brightness(1.1); outline: none; }
+  .link { color: var(--violet-ink); text-decoration: none; font-weight: 500; }
+  .link:hover, .link:focus-visible { text-decoration: underline; outline: none; }
+  @media (max-width: 560px) { .card { grid-template-columns: 1fr; } }
+  @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
 </style>
 </head>
 <body>
 <main>
+  <div class="brand"><a href="https://developdevice.com">DEVELOP DEVICE</a></div>
   <h1>Drum Visualizer has been discontinued</h1>
-  <p>Drum Visualizer was discontinued on 28 October 2026 and can no longer be purchased or used.</p>
-  <p>If you hold unused export credits from an earlier purchase, please email <a href="mailto:support@developdevice.com">support@developdevice.com</a>.</p>
-  <p>Presets, drum MIDI and plugins: <a href="https://developdevice.com">developdevice.com</a></p>
+  <p>Drum Visualizer was discontinued on 28 October 2026. You can still watch every drum hit visualized in my playlist on YouTube.</p>
+  <a class="card" href="https://www.youtube.com/watch?v=n762WmiCI1Y&amp;list=PLLazyhp1zxyI">
+    <div class="thumb"><img src="https://i.ytimg.com/vi/n762WmiCI1Y/maxresdefault.jpg" alt="Tool, Pneuma: every drum hit visualized" width="1280" height="720"></div>
+    <div><strong>Every Drum Hit Visualized</strong><span>The full playlist on the Develop Device Studio channel</span></div>
+  </a>
+  <div class="actions">
+    <a class="btn" href="https://www.youtube.com/watch?v=n762WmiCI1Y&amp;list=PLLazyhp1zxyI">Watch the playlist</a>
+    <a class="link" href="https://developdevice.com">Presets, drum MIDI and plugins at developdevice.com</a>
+  </div>
 </main>
 </body>
 </html>
